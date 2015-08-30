@@ -1,0 +1,11 @@
+#body{
+	background-color: #faf2e5;
+}
+#leftDiv{
+	border: 10px solid black;
+	border-radius: 62%;
+}
+#rightDiv{
+	background-color: black;
+	height: 500px;
+}
