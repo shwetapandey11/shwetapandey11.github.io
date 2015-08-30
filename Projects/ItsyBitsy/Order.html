@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order
+</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+        
+        <div id="headercontainer1">
+		
+            <a href="HomePage.html">
+               <div id="logo"></div>
+            </a>
+            
+
+            <div id="right1">
+			
+				<a href="HomePage.html">Home</a>
+				<a href="Workinprogress.html">Deals</a>
+				<a href="Workinprogress.html">Wish-List</a>
+				<a href="Workinprogress.html">Cart</a>
+				<a href="Workinprogress.html">SignIn/SignUp</a>
+		
+            </div>
+
+
+            <div id="right2">
+            
+            <label for="search">Search</label>&nbsp;
+            <input type="text" name="search" id="search" class="searchbar">
+                        
+            </div>
+            
+            
+        </div><!--end of LOGO div-->
+        
+        
+		<div id="menu">
+      
+		<a href="Layettes.html" class="firstmenu">Layettes</a>
+		<a href="BabyCare.html">BabyCare</a>
+		<a href="BabyFood.html">BabyFood</a>
+		<a href="Nursery.html">Nursery</a>
+		<a href="BabyGear.html">BabyGear</a>
+		<a href="Toys.html">Toys</a>
+		<a href="Order.html" class="lastmenu"><mark>Order</mark></a>
+       
+		</div>
+        
+
+	</div><!--end of header div-->
+	
+    <div id="formouter">
+
+    <div id="form">
+        
+                
+        <form method="post" action="mailto:shwetapandey11@gmail.com" enctype="text/plain" onsubmit="window.alert('Thank You. Your Order has been successfully placed. You should receive an email confirmation shortly.')">
+        
+        <h3 class="orderheading">Please fill out the form below to place an order:</h3>
+        
+        <fieldset id="customer-info">
+        
+        <legend class="form_sections">Customer Information</legend>
+        <ul>
+
+            <li>
+                <label for="customer-name">Your Name:</label>
+                <input type="text" name="customer" id="customer-name" class="textinput" maxlength="40" required>
+            </li>
+
+
+            <li>
+                <label for="customer-password">Password:</label>
+                <input type="password" name="password" id="customer-password" class="textinput" required>
+</li>
+
+
+            <li>
+                <label for="customer-email">Email:</label>
+                <input type="email" name="email" id="customer-email" class="textinput" maxlength="40" required>
+            </li>
+        </ul>
+        
+        </fieldset>
+        
+        <fieldset id="shippingaddress">
+            <legend class="form_sections">Shipping Address</legend>
+        <ul>
+            <li>
+            <label for="address-line-1">Address Line 1</label>
+            <input type="text" name="address" id="address-line-1" class="address" maxlength="45" required>
+            </li>
+
+            <li>
+            <label for="address-line-2">Address Line 1</label>
+            <input type="text" name="address" id="address-line-2" class="address" maxlength="45" required>
+            </li>
+
+            <li>
+            <label for="customer-city">City</label>
+            <input type="text" name="city" id="customer-city" class="address" maxlength="45" required>
+            </li>
+            
+            <li>
+            <label for="customer-state">State</label>
+            <input type="text" name="state" id="customer-state" class="address" maxlength="45" required>
+            </li>
+            
+            <li>
+            <label for="customer_country">Country</label>
+            <select name="country" id="customer_country">
+                <option value="USA" selected>United States</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+            </select>
+
+            </li>
+
+            <li>
+            <label for="zipcode">Zip Code</label>
+            <input type="text" name="customer-zipcode" id="zipcode" class="address" maxlength="45" required>
+            </li>
+        </ul>
+        
+        </fieldset>
+                
+        <fieldset id="billing-address">
+            <legend class="form_sections">Billing Address</legend>
+        <ul>
+            <li>
+            <label for="address-line-11">Address Line 1</label>
+            <input type="text" name="address" id="address-line-11" class="address" maxlength="45" required>
+            </li>
+
+            <li>
+            <label for="address-line-22">Address Line 1</label>
+            <input type="text" name="address" id="address-line-22" class="address" maxlength="45"required>
+            </li>
+
+            <li>
+            <label for="customer-city">City</label>
+            <input type="text" name="city" id="customer-city2" class="address" maxlength="45" >
+            </li>
+            
+            <li>
+            <label for="customer-state">State</label>
+            <input type="text" name="state" id="customer-state2" class="address" maxlength="45">
+            </li>
+            
+            <li>
+            <label for="customer_country2">Country</label>
+            <select name="country" id="customer_country2">
+                <option selected>United States</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+            </select>
+
+            <li>
+            <label for="zipcode">Zip Code</label>
+            <input type="text" name="customer-zipcode" id="zipcode2" class="address" maxlength="45">
+            </li>
+        </ul>
+        </fieldset>
+        
+        
+        
+        <fieldset id="Payment_Informtaion">
+            <legend class="form_sections">Card Informtaion</legend>
+        <ul>
+            
+            <li>
+            <label for="cardname">Cardholder's Name</label>
+            <input type="text" name="cardname" id="cardname" class="address" maxlength="45">
+            </li>
+            
+            
+            <li>
+            <label for="card">Card Type</label>
+            <select name="cardtype" id="card" class="card">
+                <option selected>Visa</option>
+                <option>Amex</option>
+                <option>Master</option>
+            </select>
+
+            
+            <li>
+            <label for="card_number">Card Number</label>
+            <input type="text" name="card_number" id="card_number" class="address" maxlength="45">
+            </li>
+
+            <li>
+            <label for="cvv_number">Cvv Number</label>
+            <input type="text" name="cvv_number" id="cvv_number" class="address" maxlength="45">
+            </li>
+            
+            
+            <li>
+            <label for="expirationdate">Expiration Date</label>
+            <input type="text" name="date" id="expirationdate" class="address" maxlength="45">
+            </li>
+
+           </ul> 
+            </fieldset>
+                        
+                        
+                            
+        <span class="form_sections" id="instructions">Extra Instructions:</span><br />
+        <textarea name="instructions" cols="40" rows="5" style="resize:none;text-indent:10%;">
+            
+        </textarea>
+        
+        <br>
+            <input type="submit" value="send">
+            <span class="reset"><input type="reset" value="reset"></span>
+                        
+        </form>
+    
+    </div><!--end of form div-->
+    
+    <div id="imageorder">
+        </div>
+    
+    </div>
+    
+	<div id="footer">
+		
+		<div id="footer1">
+				<h5>Our Story</h5>
+			<p>
+            <a href="Workinprogress.html">Itsy Bitsy</a><br />
+            <a href="Workinprogress.html">Headquarters</a><br />
+            <a href="Workinprogress.html">Careers</a><br />
+            <a href="Workinprogress.html">News Letters</a>
+			</p>
+		</div>
+
+		<div id="footer2">
+				<h5>Shipping and Returns</h5>
+			<p>
+            <a href="Workinprogress.html">Track your Shipment</a><br />
+            <a href="Workinprogress.html">Returns</a><br />
+            <a href="Workinprogress.html">Shipping Policy</a><br />
+			</p>
+		</div>
+
+		<div id="footer3">
+				<h5>Customer Support</h5>
+			<p>
+            <a href="Workinprogress.html">Customer Service</a><br />
+            <a href="Workinprogress.html">Contact via Email</a><br />
+            <a href="Workinprogress.html">Call Us</a>
+			</p>
+		</div>
+
+		<div id="footer4">
+				<h5>Country</h5>
+			<p>
+            <a href="Workinprogress.html">United States</a><br />
+            <a href="Workinprogress.html">Outside US</a>
+            </p>
+		</div>
+
+		<div id="footer5">
+				<h5>Stay Connected</h5>
+			<p>
+            <a href="Workinprogress.html">Google+</a><br />
+            <a href="Workinprogress.html">Facebook</a><br />
+            <a href="Workinprogress.html">Twitter</a>
+            </p>
+		</div>
+
+		<div id="bottomfooter"><h6>
+                <a href="Workinprogress.html">Gift-Cards</a> 
+                <a href="Workinprogress.html">Site-Map</a>
+                <a href="Workinprogress.html">Privacy-Policy</a> 
+                <a href="Workinprogress.html">Copyright2012-ItsyBitsyLLC</a></h6>
+		</div>
+	</div><!--end of main footer-->
+
+</div>
+</body>
+</html>

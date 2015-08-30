@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+#undernav {
+	background-color: #000;
+	height: 19px;
+	width: 100%;
+	/*margin-top: 10px;*/
+	color: #000;
+	position: relative;
+	top: -55px;
+	clear: none;	
+}
+
+#col_3 {
+	float: left;
+	height: auto;
+	width: 33%;
+}
+#container #col_1 {
+	float: left;
+	height: auto;
+	width: 30%;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 18px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	text-decoration: none;
+	padding-left: 20px;
+}
+#line1 {
+	width: 2px;
+	height: 400px;
+	float: right;
+	background-color: #FFF;
+	background-image: url(Images/tape.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#line2 {
+	float: right;
+	margin-top: 200px;
+	background-color: #FFF;
+	background-image: url(Images/tape.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 400px;
+	width: 2px;
+	padding-left: 15px;
+}
+#container #col_2 {
+	float: left;
+	height: auto;
+	width: 30%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+#container #col_3 {
+	float: left;
+	height: auto;
+	width: 30%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	text-align: justify;
+}
+#cardio_treadmill {
+	height: 101px;
+	width: 150px;
+	float: right;
+	left: 50px;
+}
+#cardioimage {
+	height: 118px;
+	width: 217px;
+	float: none;
+	padding-left: 5%;
+}
+#page_center_image {
+	padding-left: 5%;
+}
+#navigation ul li #current {
+	color: #000;
+}
+
+#col1_text {
+	padding-right: 17px;
+	text-align: justify;
+}
