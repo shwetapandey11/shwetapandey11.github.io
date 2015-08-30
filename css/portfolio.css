@@ -18,7 +18,9 @@
 	font-size: 16px;
 	color: white;
 }
-
+#initialHiddenImage{
+	display: none;
+}
 .imgClass{
 	margin-top: 16px;
 	margin-bottom: 5px;
@@ -71,6 +73,9 @@ p.textBelow:hover{
 }
 .infostyle{
 	font-size: 2em;
+}
+#contactInfo{
+	height: 150px;
 }
 .hide{
 	display: none;
