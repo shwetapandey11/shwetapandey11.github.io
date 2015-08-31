@@ -77,7 +77,10 @@ p.textBelow:hover{
 }
 #about p{
 	font-size: 2em;
-
+	color: green;
+}
+#about{
+	margin-bottom: 15px;
 }
 #contactInfo{
 	height: 150px;
@@ -102,4 +105,7 @@ p.textBelow:hover{
 }
 #bgBelow{
 	display: none;
+}
+.glyphicon, a{
+	color: green;
 }
