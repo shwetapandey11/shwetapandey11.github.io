@@ -4,17 +4,18 @@
 	<title>Shweta Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	<link rel="icon" type="images/ico" href="images/favicon.ico" sizes="16x16">
 	<link rel="stylesheet" href="css/portfolio.css" />
 </head>	
 
 <body id="body">
 
-	<div class="container-fluid" id="topBody">
+	<div class="container" id="topBody">
 		<div class="row">
 			<div class="col-md-6 jumbotron">
 
@@ -31,47 +32,23 @@
 
 			<!-- About Me Para  -->
 
-			<div id="about" class="col-md-4 col-md-offset-1 infostyle">
+			<div id="about" class="col-md-4 col-md-offset-1 text-center infostyle">
 				<h1 class="heading">About Me</h1>
 				<ul>
 					<li>Junior Web developer able to develop from the ground up -- from designing to development.</li>
 		 			<li>Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</li>
 				</ul>
 			</div>
-			<!-- Work Samples Para Part 1 -->
 
-			<div id="projetDivLeft" class="col-md-3 col-md-offset-0 text-center infostyle">
-				<h1 class="heading">Itsy Bitsy</h1>
-				<p>Everything you need for kids Store</p>
-				<br/>
-				<a href="Projects/ItsyBitsy/ItsyBitsy.html" target="_blank">Visit Now</a>
-			</div>
-
-			<!-- Work Samples Para Part 2 -->
-
-			<div id="projetDivRight" class="col-md-3 text-center infostyle">
-				<h1 class="heading">Fitness</h1>
-				<p>Inormational Website on Fitness</p>
-				<br/>
-					<a href="Projects/FitnessWebsite/Home.html" target="_blank">Visit Now</a>
-				</p>
-			</div>
-
-			<div id="contactInfo" class="col-md-3 col-md-offset-1 text-center infostyle">
-				<img src="images/information.png" height="100px" width="180px" class="img-responsive img-rounded" />
-			</div>
-			<!-- <div class="col-md-6">
-				<div class="nav nabar-nav"
-			</div> -->
 		</div>
 	</div>
 	
-	<div class="container-fluid" id="lowerBody">
+	<div class="container" id="lowerBody">
 		<div class="row">
 
 			<!-- About Image -->
-
-			<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-11 col-xs-offset-1 imgClass" id="one">
+			<div>
+			<div class="col-md-3 col-md-offset-2 col-sm-3 col-xs-11 col-xs-offset-1 imgClass" id="one">
 					
 					<img src="images/workingWomen.png" height="230px" width="230px" class="img-circle img-responsive" data-toggle="tooltip" data-placement="right" title="About me">
 
@@ -83,8 +60,16 @@
 				</div>
 
 			</div>
+			</div>
 			
-			
+			<!-- Work Samples Para Part 1 -->
+
+			<div id="projetDivLeft" class="col-md-3 col-md-offset-2 text-center infostyle">
+				<h1 class="heading">Itsy Bitsy</h1>
+				<p>Everything you need for kids Store</p>
+				<br/>
+				<a href="Projects/ItsyBitsy/ItsyBitsy.html" target="_blank">Visit Now</a>
+			</div>
 
 			<!-- Project Image -->
 			<div class="col-md-3 col-md-offset-0 col-sm-3 col-xs-11 col-xs-offset-1 imgClass" id="two">
@@ -98,13 +83,21 @@
 
 				</div>
 			</div>
-			
 
+			<!-- Work Samples Para Part 2 -->
+
+			<div id="projetDivRight" class="col-md-3 col-md-offset-0 text-center infostyle">
+				<h1 class="heading">Fitness</h1>
+				<p>Information Website on Fitness</p>
+				<br/>
+				<a href="Projects/FitnessWebsite/Home.html" target="_blank">Visit Now</a>
+			</div>
+			
 			<!-- Contact Image -->
 
 			<div class="col-md-4 col-md-offset-0 col-sm-3 col-xs-11 col-xs-offset-1 imgClass" id="three">
 				
-				<img id="contactImgId" src="images/envelope4.png" height="230px" width="230px"  class="img-circle img-responsive" data-toggle="tooltip" data-placement="left" title="Contact">
+				<img id="contactImgId" src="images/envelope4.png" height="230px" width="230px"  class="img-circle img-responsive" data-toggle="tooltip" data-placement="right" title="Contact">
 				<img src="images/information.png" height="230px" width="230px" class="img-responsive img-circle" id="initialHiddenImage" />
 
 				<div class="block text-center" id="contactLink">
@@ -112,7 +105,6 @@
 						<i class="fa fa-hand-pointer-o"></i>
 					</p>
 				</div>
-
 			</div>		
 
 		</div>

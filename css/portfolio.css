@@ -13,7 +13,7 @@
 #lowerBody{
 	background-color: #f0c310;
 	/*background-color: #f0f0ef;*/
-	height: 330px;
+	max-height: 330px;
 	font-family: Optima, Helvetica, Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: white;
@@ -54,24 +54,24 @@ p.textBelow{
 	font-size: 20px;	
 }
 p.textBelow:hover{
-	
+	cursor: hand;
 }
 .infostyle{
 	background-color: white;
 	color: gray;
-	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
 	-moz-border-radius: 15px;
+	border-radius: 15px;
 	margin-top: 30px;
 	border: 5px solid #f0c310;
 	padding: 10px;
 	display: none;
 	min-height: 200px;
-	max-height: auto;
+	max-height: 200px;
 }
-.infostyle{
+#about{
 	font-size: 2em;
 }
 #contactInfo{
