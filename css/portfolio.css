@@ -2,18 +2,23 @@
 	/*background-color: #faf2e5;
 	background-color: #b01111;*/
 }
-
-#topBody, .jumbotron{
+#topBody{
 	/*background-color: #f0f0ef;*/
 	background-color: black;
-	height: 280px;
+	min-height: 280px;
+	max-height: auto;
 	margin-bottom: 10px;
 	color: white;
+	padding-left: 50px;
+}
+#topBody h1{
+	margin-top: 100px;
 }
 #lowerBody{
 	background-color: #f0c310;
 	/*background-color: #f0f0ef;*/
-	max-height: 330px;
+	min-height: 300px;
+	max-height: auto;
 	font-family: Optima, Helvetica, Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: white;
@@ -69,10 +74,10 @@ p.textBelow:hover{
 	padding: 10px;
 	display: none;
 	min-height: 200px;
-	max-height: 200px;
 }
-#about{
+#about p{
 	font-size: 2em;
+
 }
 #contactInfo{
 	height: 150px;
@@ -88,4 +93,13 @@ p.textBelow:hover{
 }
 .fa-mobile{
 	font-size: 1.5em;
+}
+.bgProjects{
+	background: url("images/largerBG.jpg") no-repeat;
+	height: 30px;
+	width: 1200px;	
+	display: inline-block;
+}
+#bgBelow{
+	display: none;
 }

@@ -3,16 +3,12 @@ $(function () {
 });
 
 $(document).ready(function(){
-    $("#one").click(function(){
+    $("#one,#about").click(function(){
        /* $("#two,#three").toggle();*/
-        $("#about").slideToggle("slow");
+        $("#about").slideToggle(2000);
     });
 
-    $("#about").click(function(){
-    	$(this).slideToggle("slow");
-    });
-
-    $("#two").click(function(){
+    $("#two,#projetDivRight,#projetDivLeft").click(function(){
         $("#one,#three,#projetDivRight,#projetDivLeft").toggle();
 /*        $("#projetDivRight,#projetDivLeft").fadeToggle();
 */  });
