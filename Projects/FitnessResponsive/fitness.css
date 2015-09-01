@@ -1,0 +1,79 @@
+#body{
+	background: url("images/bg.gif");
+	background-color: #bb0011;
+}
+.container{
+	background-color: white;
+	padding: 0;
+}
+.row{
+	background: white;
+	margin: 0;
+	border-left: 20px solid white;
+	border-right: 20px solid white;
+	padding: 0;
+}
+.panel{
+	background-color: #bb0011;
+	margin-bottom: 0;
+}
+.nav li a{
+	color: #660000;
+	font-size: 20px;
+	font-family: Optima, 'Helvetica Neue',Verdana, sans-serif;
+}
+.nav li a.active{
+	background-color: #bb0011;
+	color: white;
+	border-top: 1px solid white;
+}
+.nav{
+	border-bottom: 2px solid #bb0011; 
+	border-top: 2px solid #bb0011; 
+}
+#footer{
+	background-color: #bb0011;
+	color: white;
+	padding: 1%;
+}
+#welcomeText{
+	padding: 6%;
+}
+
+/*  ---------Slider-------- */
+
+#lowerBodySlider{
+	height: 455px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+#lowerBodySlider .slides{
+	display: block;
+	width: 4385px;
+	height: 455px;
+	list-style-type: none;
+	padding: 0px;
+
+}
+#lowerBodySlider .slide{
+	float: left;
+	width: 877px;
+	height: 455px;
+	padding: 0px;
+
+}
+/* ---------- sub-pages ------------ */
+h5,h4{
+	margin: 20px auto;
+}
+p{
+	padding: 8px auto;
+	margin: 10px;
+}
+
+
+
+
+
+
