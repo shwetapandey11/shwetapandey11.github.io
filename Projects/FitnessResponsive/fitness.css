@@ -6,16 +6,21 @@
 	background-color: white;
 	padding: 0;
 }
-.row{
-	background: white;
-	margin: 0;
-	border-left: 20px solid white;
-	border-right: 20px solid white;
+#homeRow{
 	padding: 0;
 }
-.panel{
+.row{
+/*	margin: 0;
+/**/	padding-right: 60px;
+*/}
+.banner{
 	background-color: #bb0011;
+	min-height: 100px;
+	padding: 25px auto;
 	margin-bottom: 0;
+}
+.buttons{
+	margin-top: 10px;
 }
 .nav li a{
 	color: #660000;
@@ -71,8 +76,35 @@ p{
 	padding: 8px auto;
 	margin: 10px;
 }
-
-
+/* --------- BMI Page  -------------*/
+#bmiImage{
+	padding: 0;
+}
+#bmiContent{
+	margin-top: 5px;
+	min-height: 450px;
+	max-height: auto;
+	padding: 20px;
+	background: linear-gradient(to left, #fbfbfb, #fafafa);	
+}
+/*----------- Sign Up -------------*/
+#singUpForm{
+	padding: 15px;
+	min-height: 450px;
+	max-height: auto;
+}
+input:hover{
+	box-shadow: 0px 0px 5px 2px #991F00;
+}
+#signUpBtn:hover{
+	background: linear-gradient(#bb0011, #991F00);
+	color: white;
+}
+#errorBorder{
+	color: red;
+	margin-top: 0;
+	padding: 0;
+}
 
 
 
