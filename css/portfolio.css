@@ -108,3 +108,6 @@ p.textBelow:hover{
 .glyphicon, a{
 	color: green;
 }
+.row{
+	max-height: 400px;
+}
