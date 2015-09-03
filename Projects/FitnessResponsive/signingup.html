@@ -17,127 +17,127 @@
 <body id="body">
 
 	<div class="container banner">
-		
-		<div class="col-md-8">
+		<div class="row">
+			<div class="col-md-8">
 
-			<div>						
-				<a href="home.html">
-					<img src="images/fitness.gif" alt="logo" height="80px" width="200px">
-				</a>
-			</div>
-
-		</div>
-
-		<div class="col-md-3 col-md-offset-1 buttons text-center">
-			
-			
-
-	<!-- Sign Up -->			
-				<a class="btn btn-danger btn-sm" href="signingup.html">Sign Up</a>
-	
-	<!-- Sign In -->			
-					<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
-						Sign In
-					</button>		
-		<!-- Sign In Modal -->
-				<div id="myModal" class="modal fade" role="dialog">
-				 	<div class="modal-dialog">
-				    <div class="modal-content">
-				     	<div class="modal-header">
-				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-				        	<h4 class="modal-title">Please Sign-in below:</h4>				    
-					    </div>
-					    <div class="modal-body">
-					        <form role="form">
-								
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input type="email" class="form-control" id="email">
-								</div>
-								
-								<div class="form-group">
-									<label for="pwd">Password:</label>
-									<input type="password" class="form-control" id="pwd">
-								</div>
-								
-								<div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
-								</div>
-
-								<button type="submit" class="btn btn-info">Submit</button>
-							</form>
-					    </div>
-
-					    <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close
-					        </button>
-					    </div>
-				    </div>
-				  </div>
+				<div>						
+					<a href="home.html">
+						<img src="images/fitness.gif" alt="logo" height="80px" width="200px">
+					</a>
 				</div>
 
-<!-- BMI Calculator -->
-				<a class="btn btn-danger btn-sm" href="bmi.html">Calculate BMI
-				</a>
 			</div>
+
+			<div class="col-md-3 col-md-offset-1 buttons text-center">
+				
+				
+
+		<!-- Sign Up -->			
+					<a class="btn btn-danger btn-sm" href="signingup.html">Sign Up</a>
 		
+		<!-- Sign In -->			
+						<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
+							Sign In
+						</button>		
+			<!-- Sign In Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					 	<div class="modal-dialog">
+					    <div class="modal-content">
+					     	<div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+					        	<h4 class="modal-title">Please Sign-in below:</h4>				    
+						    </div>
+						    <div class="modal-body">
+						        <form role="form">
+									
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" id="email">
+									</div>
+									
+									<div class="form-group">
+										<label for="pwd">Password:</label>
+										<input type="password" class="form-control" id="pwd">
+									</div>
+									
+									<div class="checkbox">
+										<label><input type="checkbox"> Remember me</label>
+									</div>
+
+									<button type="submit" class="btn btn-info">Submit</button>
+								</form>
+						    </div>
+
+						    <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+						        </button>
+						    </div>
+					    </div>
+					  </div>
+					</div>
+
+	<!-- BMI Calculator -->
+					<a class="btn btn-danger btn-sm" href="bmi.html">Calculate BMI
+					</a>
+				</div>
+		</div>
 	</div>	
 
 	<div class="container">
-		<ul class="nav navbar-pills nav-justified text-uppercase">
-			<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
-			<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
-			<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
-			<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
-			<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
-		</ul>	
-
-
+		<div class="row">
+			<ul class="nav navbar-pills nav-justified">
+				<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
+				<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
+				<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
+				<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
+				<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
+			</ul>	
 	
-		<div class="container">
-		<div class="col-md-6 col-md-offset-3">
-			<form name="singUpForm" id="singUpForm" role="form" action="" method="post">
+		
+			<div class="col-md-6 col-md-offset-3">
+				<form name="singUpForm" id="singUpForm" role="form" action="" method="post">
 
-				<div class="form-group">
-				    <label for="fname">First Name:</label>
-				    <input type="text" class="form-control" id="fname" required/>
-				    <div id="errorFname"></div>
-				 </div>
-				 	
+					<div class="form-group">
+					    <label for="fname">First Name:</label>
+					    <input type="text" class="form-control" id="fname" required/>
+					    <div id="errorFname"></div>
+					 </div>
+					 	
 
-				 <div class="form-group">
-				    <label for="lname">Last Name:</label>
-				    <input type="text" class="form-control" id="lname" required/>
-				    <div id="errorLname"></div>
-				 </div>
-				 	
+					 <div class="form-group">
+					    <label for="lname">Last Name:</label>
+					    <input type="text" class="form-control" id="lname" required/>
+					    <div id="errorLname"></div>
+					 </div>
+					 	
 
-				  <div class="form-group">
-				    <label for="email">Email address:</label>
-				    <input type="email" class="form-control" id="email" required/>
-				 	<div id="errorEmail"></div>
-				  </div>
+					  <div class="form-group">
+					    <label for="email">Email address:</label>
+					    <input type="email" class="form-control" id="email" required/>
+					 	<div id="errorEmail"></div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="pwd">Password:</label>
-				    <input type="password" class="form-control" id="pwd" required/>
-				    <div id="errorPwd"></div>
+					  <div class="form-group">
+					    <label for="pwd">Password:</label>
+					    <input type="password" class="form-control" id="pwd" required/>
+					    <div id="errorPwd"></div>
 
-				  </div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="pwdCheck">Confirm Password:</label>
-				    <input type="password" class="form-control" id="pwdCheck" required/>
-				    <div id="errorPwdCheck"></div>
-				  </div>
+					  <div class="form-group">
+					    <label for="pwdCheck">Confirm Password:</label>
+					    <input type="password" class="form-control" id="pwdCheck" required/>
+					    <div id="errorPwdCheck"></div>
+					  </div>
 
-			  	<input type="submit" value="Submit" class="btn btn-danger"/>
-				<input type="reset" class="btn btn-danger"/>
-			</form>
-		</div>
-	</div>	
+				  	<input type="submit" value="Submit" class="btn btn-danger"/>
+					<input type="reset" class="btn btn-danger"/>
+				</form>
+			</div>
+		</div>	
 	</div>
-	<div class="container" id="footer">	
+	<div class="container" id="footer">
+		<div class="row">	
 			<ul class="nav nav-pills nav-justified text-center list-unstyled">
 				<li>Feedback</li>
 				<li>Contact</li>
@@ -151,6 +151,7 @@
 					<i class="fa fa-google-plus"></i>
 				</li>
 			</ul>
+		</div>
 	</div>
 
 	

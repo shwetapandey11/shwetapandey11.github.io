@@ -5,10 +5,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
 
 	<link rel="icon" type="images/ico" href="images/fitness-fav2.ico" sizes="16x16">
 	<link rel="stylesheet" href="fitness.css" />
@@ -17,7 +20,7 @@
 <body id="body">
 
 	<div class="container banner">
-		
+	<div class="row">
 		<div class="col-md-8">
 
 			<div>						
@@ -80,66 +83,71 @@
 				<a class="btn btn-danger btn-sm" href="bmi.html">Calculate BMI
 				</a>
 			</div>
-		
+		</div>
 	</div>	
 
 <!-- Naviagation Menu -->
 	<div class="container">
-		<ul class="nav navbar-pills nav-justified text-uppercase">
-			<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
-			<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
-			<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
-			<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
-			<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
-		</ul>	
-
+		<div class="row">
+			<ul class="nav navbar-pills nav-justified">
+				<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
+				<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
+				<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
+				<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
+				<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
+			</ul>	
+		</div>
 <!-- slider col -->
-	<div class="row" id="homeRow">
-		<div class="col-md-8">
-			<div id="lowerBodySlider">
-				<div class="slides">
-					<div><img class="slide img-responsive" src="images/yogaSlide877x455.gif"></div>
-					<div><img class="slide img-responsive" src="images/aquaticsSlide877x455.gif"></div>
-					<div><img class="slide img-responsive" src="images/cardioSlide877x455.gif"></div>
-					<div><img class="slide img-responsive" src="images/zumbaSlide877x455.gif"></div>
-					<div><img class="slide img-responsive" src="images/pilatesSlide877x455.gif"></div>
+		<div class="row">
+			<div class="col-md-8 homeRow">
+				<div id="lowerBodySlider">
+					<div class="slides">
+						<div><img class="slide img-responsive" src="images/yogaSlide877x455.gif"></div>
+						<div><img class="slide img-responsive" src="images/aquaticsSlide877x455.gif"></div>
+						<div><img class="slide img-responsive" src="images/cardioSlide877x455.gif"></div>
+						<div><img class="slide img-responsive" src="images/zumbaSlide877x455.gif"></div>
+						<div><img class="slide img-responsive" src="images/pilatesSlide877x455.gif"></div>
+					</div>
+				</div>
+			</div>
+
+<!-- Welcome Text -->
+			<div class="col-md-4 text-center homeRow" id="welcomeText">
+				<div class="row">
+					<div id="draggable" data-toggle="tooltip" data-placement="top" title="Drag Me!">
+						<h2>Know Your</h2>
+						<h1>LIMITATIONS</h1>
+						<h3>&</h3>
+						<h1 class="large">DEFY</h1>
+						<h2>Them</h2>
+					</div>
 				</div>
 			</div>
 		</div>
-
-<!-- Welcome Text -->
-		<div class="col-md-4 text-center" id="welcomeText">
-			<div>
-				<h1>Know Your</h1>
-				<h1>LIMITATIONS</h1>
-				<h5>&</h5>
-				<h1>DEFY</h1>
-				<h1>Them</h1>
-			</div>
-		</div>
 	</div>
-</div>
 <!-- footer -->	
 	<div class="container" id="footer">	
-		<ul class="nav nav-pills nav-justified text-center list-unstyled">
-			<li>Feedback</li>
-			<li>Contact</li>
-			<li>About Us</li>
-			<li>Blog</li>
-			<li>Location</li>
-			<li>
-				<i class="fa fa-pinterest"></i>
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-google-plus"></i>
-			</li>
-		</ul>
+		<div class="row">
+			<ul class="nav nav-pills nav-justified text-center list-unstyled">
+				<li>Feedback</li>
+				<li>Contact</li>
+				<li>About Us</li>
+				<li>Blog</li>
+				<li>Location</li>
+				<li>
+					<i class="fa fa-pinterest"></i>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-google-plus"></i>
+				</li>
+			</ul>
+		</div>
 	</div>
 
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>	
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='js/fitness.js'></script>
 </body>
 </html>

@@ -28,6 +28,16 @@ $(function(){
 	start();
 });
 
+  $(function() {
+  	$('[data-toggle="tooltip"]').tooltip();
+
+    $( "#draggable" ).draggable();
+
+     $( "#tabs" ).tabs();
+
+     $(".nav .nav-tabs").addClass("text-lowerCase");
+  });
+
 /*--------------------------------  Form Validation ----------------------------------*/
 $(document).ready(function(){ 
 	function signUpValidation(){
