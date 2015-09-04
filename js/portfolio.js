@@ -5,7 +5,7 @@ $(function () {
 $(document).ready(function(){
     $("#one,#about").click(function(){
         $("#two,#three ").toggle();
-        $("#about").fadeToggle();
+        $("#about").toggle();
     });
 
     $("#two,#projetDivRight,#projetDivLeft").click(function(){

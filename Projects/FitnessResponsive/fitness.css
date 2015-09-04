@@ -5,9 +5,15 @@
 	src: url('fonts/ThickDeco.ttf');
 }
 
+@font-face{
+	font family: "ShadowPuppets";
+	src: url('fonts/ShadowPuppets.ttf');
+}
+/*---------------------------    Home Page       ----------------------------*/
 #welcomeText{
 	font-family: 'limilations', Optima, 'Helvetica Neue', sans-serif;
 	padding-top: 6%;
+	-webkit-color:#b01;
 	color: #fff;
 	height: 455px;
 }
@@ -24,8 +30,17 @@
 .homeRow{
 	padding: 0;
  	background: linear-gradient(#FF6699, #66FF99);
+ 	-moz-background: linear-gradient(#b01, #F0F0FF);
+ 	-o-background: linear-gradient(#b01, #F0F0FF);
+ 	-ms-background: linear-gradient(#b01, #F0F0FF);
  	background: linear-gradient(#b01, #F0F0FF);
+
+/*------  Safari fix  ------*/
+
+ 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bb0011), color-stop(100%,#f0f0ff));  Chrome,Safari4+ 
+	background: -webkit-linear-gradient(top, #bb0011 0%,#f0f0ff 100%); /* Chrome10+,Safari5.1+ */
 }
+
 .banner{
 	background-color: #bb0011;
 	min-height: 100px;
@@ -46,8 +61,8 @@
 	border-top: 1px solid white;
 }
 .nav{
-	border-bottom: 2px solid #bb0011; 
-	border-top: 2px solid #bb0011;
+/*	border-bottom: 2px solid #bb0011; 
+*/	border-top: 2px solid #bb0011;
 }
 #footer{
 	background-color: #bb0011;
@@ -82,11 +97,40 @@
 h5,h4{
 	margin: 20px auto;
 }
-p{
-	padding: 8px auto;
-	margin: 10px;
+h3{
+	font-family: "ShadowPuppets";
+}
+li.sub-nav{
+	padding: 0;
+	margin-bottom: 0; 
+}
+.sub-nav li a{
+ 	font-family: Optima, 'Helvetica Neue', Verdana, sans-serif;
+ 	font-size: 1.2em;
+ 	margin-top: 5px;
+}
+.activeTab{
+	background: linear-gradient(#b01, #F0F0FF) 
+}
+.tab-content > .tab-pane{
+    display: block;
+    height: 0;  
+    overflow-y: hidden;
+}
+.tab-content > .active{
+    min-height: 325px;
+    overflow: auto;
+}
+ .tab-content> #tabs-1{
+	margin-top: 2%;
+}
+.tab-content{
+	min-height: 370px;
+	margin-top: 0;
+	max-height: auto;
 }
 /* --------- BMI Page  -------------*/
+
 #bmiImage{
 	padding: 0;
 }

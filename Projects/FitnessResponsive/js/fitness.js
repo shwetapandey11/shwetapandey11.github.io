@@ -1,5 +1,46 @@
 'use strict';
-/*--------------  Slider Home Page -------------*/
+
+/*---------------------------- Activating Widgets & Interactions ----------------------------   */
+
+$(function(){
+
+	$('[data-toggle="tooltip"]').tooltip(); 
+
+	$("#welcomeTextText").draggable({ containment: "#containmentParent", scroll: false });
+
+	$( "#dialog" ).dialog();
+
+	$("#myModal").draggable();
+
+});
+
+$(function (){
+	$(".tab-content .tab-pane").css("max-height","auto");
+}
+/*----------------------------- Explode Effect --------------------------*/
+
+$(function(){
+	
+ 
+    $( "#textLimitations" ).click(function(){
+    		$(this).effect({
+					effect: "explode",
+					easing: "linear",
+					pieces: 4,
+					duration: 1000,
+					complete: callback
+    	});
+
+    });
+
+      function callback(){
+      	setTimeout(function() {
+        	$( "#textLimitations" ).removeAttr( "style" ).hide().fadeIn();
+      		}, 1000 );
+      }
+    });
+
+/*-------------------------------   Slider Home Page ------------------------------------ */
 $(function(){
 	var $slider = $("#lowerBodySlider");
 	var $slides = $slider.find(".slides");
@@ -27,16 +68,6 @@ $(function(){
 
 	start();
 });
-
-  $(function() {
-  	$('[data-toggle="tooltip"]').tooltip();
-
-    $( "#draggable" ).draggable();
-
-     $( "#tabs" ).tabs();
-
-     $(".nav .nav-tabs").addClass("text-lowerCase");
-  });
 
 /*--------------------------------  Form Validation ----------------------------------*/
 $(document).ready(function(){ 
@@ -157,7 +188,7 @@ function calcBMI(){
 
 				document.getElementById("result").innerHTML= ("Try again.<br />");
 			}
-}
+	};
 
 
 
