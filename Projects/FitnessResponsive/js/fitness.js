@@ -13,10 +13,6 @@ $(function(){
 	$("#myModal").draggable();
 
 });
-
-$(function (){
-	$(".tab-content .tab-pane").css("max-height","auto");
-}
 /*----------------------------- Explode Effect --------------------------*/
 
 $(function(){
