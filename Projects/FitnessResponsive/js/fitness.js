@@ -4,25 +4,32 @@
 
 $(function(){
 
+
 	$('[data-toggle="tooltip"]').tooltip(); 
 
-	$("#welcomeTextText").draggable({ containment: "#containmentParent", scroll: false });
+	$('[data-toggle="popover"]').popover(); 
+
+	/* adding popover to explanation attr images brofe adding drag to them */
+
+	$("[alt='explanation']").draggable({ containment: "#containmentParent", scroll: false });
 
 	$( "#dialog" ).dialog();
 
 	$("#myModal").draggable();
 
 });
-/*----------------------------- Explode Effect --------------------------*/
+/*----------------------------- Effect --------------------------*/
 
 $(function(){
 	
  
-    $( "#textLimitations" ).click(function(){
+    $( "#welcomeTextText" ).click(function(){
     		$(this).effect({
-					effect: "explode",
-					easing: "linear",
-					pieces: 4,
+					effect: "bounce",
+					/* explode effect
+					easing: "easing",
+					pieces: 4,*/
+					times: 5,
 					duration: 1000,
 					complete: callback
     	});
@@ -31,7 +38,7 @@ $(function(){
 
       function callback(){
       	setTimeout(function() {
-        	$( "#textLimitations" ).removeAttr( "style" ).hide().fadeIn();
+        	$( "#welcomeTextText" ).removeAttr( "style" ).hide().fadeIn();
       		}, 1000 );
       }
     });
@@ -190,6 +197,7 @@ function calcBMI(){
 
 
 
+/*----------------------------- Adding Styles using js -------------------------*/
 
-
+	$("[alt='explanation']").css("padding-top","20px");
 

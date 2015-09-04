@@ -14,7 +14,7 @@
 	padding-top: 6%;
 	-webkit-color:#b01;
 	color: #fff;
-	height: 450px;
+	height: 445px;
 }
 #body{
 	background: url("images/bg.gif");
@@ -28,6 +28,7 @@
 }
 .homeRow{
 	padding: 0;
+	height: 445px;
  	background: linear-gradient(#FF6699, #66FF99);
  	-moz-background: linear-gradient(#b01, #F0F0FF);
  	-o-background: linear-gradient(#b01, #F0F0FF);
@@ -70,7 +71,7 @@
 /*  ---------Slider-------- */
 
 #lowerBodySlider{
-	max-height: 450px;
+	max-height: 445px;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
@@ -78,15 +79,14 @@
 #lowerBodySlider .slides{
 	display: block;
 	width: 4385px;
-	height: 450px;
+	height: 445px;
 	list-style-type: none;
 	padding: 0px;
 	overflow: hidden;
 }
 #lowerBodySlider .slide{
 	float: left;
-/*	width: 877px;
-*/	max-height: 450px;
+	max-height: 445px;
 	padding: 0px;
 }
 
@@ -102,9 +102,6 @@ li.sub-nav{
  	font-family: Optima, 'Helvetica Neue', Verdana, sans-serif;
  	font-size: 1.2em;
  	margin-top: 5px;
-}
-.activeTab{
-	background: linear-gradient(#b01, #F0F0FF) 
 }
 .tab-content > .tab-pane{
     display: block;
@@ -123,6 +120,21 @@ li.sub-nav{
 	margin-top: 0;
 	max-height: auto;
 }
+img[alt="veg_plate"]{
+	border: 1px solid black;
+	background: #fff;
+	-moz-background: linear-gradient(#fff, #FF9999);
+ 	-o-background: linear-gradient(#fff, #FF9999);
+ 	-ms-background: linear-gradient(#fff, #FF9999);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9caf8), color-stop(100%,#FF9999)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9caf8 0%,#FF9999 100%); /* Chrome10+,Safari5.1+ */
+ 	background: linear-gradient(#fff,#FF9999);
+	margin-top: 10%;
+}
+img[alt="veg_plate"], img[alt="do-n-dont"]{
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
 /* --------- BMI Page  -------------*/
 
 #bmiImage{
@@ -130,8 +142,7 @@ li.sub-nav{
 }
 #bmiContent{
 	margin-top: 5px;
-	min-height: 450px;
-	max-height: auto;
+	height: 440px;
 	padding: 20px;
 	background: linear-gradient(to left, #fbfbfb, #fafafa);	
 }
@@ -140,9 +151,9 @@ li.sub-nav{
 
 #singUpForm{
 	padding: 15px;
-	min-height: 450px;
-	max-height: auto;
-}
+	min-height: 445px;
+/*	max-height: auto;
+*/}
 input:hover{
 	box-shadow: 0px 0px 5px 2px #991F00;
 }
