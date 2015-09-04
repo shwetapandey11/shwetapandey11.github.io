@@ -198,6 +198,15 @@ function calcBMI(){
 
 
 /*----------------------------- Adding Styles using js -------------------------*/
-
+$(function(){
 	$("[alt='explanation']").css("padding-top","20px");
+
+});
+
+
+
+
+
+
+
 

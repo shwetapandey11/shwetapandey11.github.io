@@ -1,3 +1,5 @@
+
+
 @import url(https://fonts.googleapis.com/css?family=Fascinate+Inline);
 
 @font-face{
@@ -5,9 +7,6 @@
 	src: url('fonts/ThickDeco.ttf');
 }
 
-/**{
-	border: 1px solid green;
-}*/
 /*---------------------------    Home Page       ----------------------------*/
 #welcomeText{
 	font-family: 'limilations', Optima, 'Helvetica Neue', sans-serif;
@@ -66,7 +65,7 @@
 	padding: 1%;
 }
 #containmentParent > .row{
-	max-height: 400px;
+	min-height: 380px;
 }
 /*  ---------Slider-------- */
 
