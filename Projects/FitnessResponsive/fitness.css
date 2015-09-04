@@ -160,7 +160,7 @@ input:hover{
 	background: linear-gradient(#bb0011, #991F00);
 	color: white;
 }
-#errorBorder{
+.error{
 	color: red;
 	margin-top: 0;
 	padding: 0;

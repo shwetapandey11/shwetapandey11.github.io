@@ -74,7 +74,8 @@ $(function(){
 
 /*--------------------------------  Form Validation ----------------------------------*/
 $(document).ready(function(){ 
-	function signUpValidation(){
+	
+	function signUpValidation(e){
 		// Caching DOM
 		var $fname = $("#fname").val();
 		var $lname = $("#lname").val();
@@ -84,42 +85,74 @@ $(document).ready(function(){
 		var $errorLname = $("#errorLname");
 		var $errorPwd = $("#errorPwd");		
 		var $errorPwdCheck = $("#errorPwdCheck");
+
 		var $namesPattern = /^[A-Za-z]+$/;
 		var $pwdPattern = /^[A-Za-z0-9#@!$%\^&\*]+$/i;
 
 		// form fields checks
-		if( !$fname.match($namesPattern) ){
-			$errorFname.html("Please enter valid First Name!")
-			$errorFname.attr("id",'errorBorder');
-			return false;
+		function checkFname(){
+			if( !$fname.match($namesPattern) ){
+				$errorFname.html("Please enter valid First Name!")
+				$errorFname.addClass("error");
+				return false;
+			}
+			else{
+				return true;
+			}
 		}
-		if( !$lname.match($namesPattern) ){
-			$errorLname.html("Please enter valid Last Name!");
-			$errorFname.attr("id",'errorBorder');
-			return false;
-		} 			
-		if( !$pwd.match($pwdPattern) ){
-			$errorPwd.html("Password must contain at-least one Uppercase,Lowercase,Number and a special character!");
-			$errorPwd.css("color",'red');
-			return false;
-		}		
-		else if( $pwd === $pwdCheck ){
-			return true;
-			$errorPwdCheck.css("color",'red');
-			$errorPwdCheck.html("Passwords donot match!");
-			return false;
+		function checkLname(){
+			if( !$lname.match($namesPattern) ){
+				$errorLname.html("Please enter valid Last Name!");
+				$errorLname.addClass("error");
+				return false;
+			} 	
+			else{
+				return true;
+			}
+		}
+		function checkPwd(){	
+			if( !$pwd.match($pwdPattern) ){
+				$errorPwd.html("Password must contain at-least one Uppercase,Lowercase,Number and a special character!");
+				$errorPwd.css("color",'red');
+				return false;
+			}
+			else{
+				return true;
+			}
+
+		function checkPswdMatch(){
+			if( $pwd === $pwdCheck ){
+				return true;
+			}
+			else{
+				$errorPwdCheck.css("color",'red');
+				$errorPwdCheck.html("Passwords donot match!");
+				return false;
+			}
 		}
 		// form action submit
-		if(($errorFname == "") && ($errorLname == "") && ($errorPwd == "") && ($errorPwdCheck == ""))
+		/*if(($errorFname == "") && ($errorLname == "") && ($errorPwd == "") && ($errorPwdCheck == ""))
 		{
 			return true;
 		}
 		else{
 			return false;
-		}
+		}*/
+		checkFname();
+		checkLname();
+		checkPwd();
+		checkPswdMatch();
+
 	}
-	$("#singUpForm").submit(signUpValidation);
-});
+	//$("#singUpForm").submit(signUpValidation);
+
+	$("#singUpForm").submit(signUpValidation(e))
+	{
+  		alert( "Handler for .submit() called." );
+  		event.preventDefault();
+	}
+
+}})
 
 /*---------------------------------- Set Cookie ---------------------------------------*/
 
@@ -163,12 +196,14 @@ function calcBMI(){
 		{
 			alert("Please enter a valid numeric value");
 			weight = prompt("Please enter your weight","");
+			break;
 		}
 	var height = prompt("Please enter your height","");
 		while(isNaN(height) || (height ===""))
 		{
 			alert("Please enter a valid numeric value");
 			height = prompt("Please enter your height","");
+			break;
 		}
 
 	var BMI = eval((Math.floor((weight*703)/(height*height))*100)/100);
