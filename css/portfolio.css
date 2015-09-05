@@ -7,6 +7,7 @@
 	background-color: black;
 	min-height: 280px;
 	max-height: auto;
+	overflow: hidden;
 	margin-bottom: 10px;
 	color: white;
 	padding-left: 50px;
@@ -25,11 +26,12 @@
 }
 #initialHiddenImage{
 	display: none;
+	width: 230px;
+	margin: 0 auto;
 }
 .imgClass{
 	margin-top: 16px;
 	margin-bottom: 5px;
-/*	border: 1px solid red;*/
 }
 blockquote a{
 	color: #f0c310;
@@ -37,7 +39,6 @@ blockquote a{
 }
 footer{
 	padding-top: 6px;
-
 }
 p footer{
 	height: 30px;
@@ -46,13 +47,13 @@ p footer{
 	padding-top: 5px;
 }
 #codeImg{
-	opacity: 0.8;
+	opacity: 1;
 	border-image-width: 5%;
-}
+}/*
 .block{
 	width: 200px;
 	margin-top:	10px; 
-}
+}*/
 p.textBelow{
 	color: white;
 	padding-left: 25px;
@@ -74,20 +75,17 @@ p.textBelow:hover{
 	padding: 10px;
 	display: none;
 	min-height: 200px;
+	display: none;
 }
 #about p{
 	color: gray;
 }
-#about{
+/*#about{
 	margin-bottom: 15px;
-}
+}*/
 #contactInfo{
 	height: 150px;
-}
-.hide{
-	display: none;
-}
-.heading{
+}.heading{
 	font-family: 'Charlemagne Std', Optima, Helvetica, sans-serif;
 }
 #one:hover{
@@ -110,4 +108,11 @@ p.textBelow:hover{
 }
 .row{
 	max-height: 400px;
+}
+img{
+	margin: 0 auto;
+}
+#lowerBody >.xs-col-11{
+/*	min-height: 600px;
+*/
 }

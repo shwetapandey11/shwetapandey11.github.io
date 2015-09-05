@@ -1,9 +1,12 @@
 <!doctype html>
+
 <html lang="en">
 <head>
 	<title>Fitness Home</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
 
 	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -95,7 +98,7 @@
 	
 		
 			<div class="col-md-6 col-md-offset-3">
-				<form name="singUpForm" id="singUpForm" role="form" action="" method="post">
+				<form name="singUpForm" id="singUpForm" role="form" autocomplete="off" method="post" action="">
 					<div class="form-group">
 					    <label for="fname">First Name:</label>
 					    <input type="text" class="form-control" id="fname" required/>
@@ -108,12 +111,12 @@
 					 </div>
 					  <div class="form-group">
 					    <label for="email">Email address:</label>
-					    <input type="email" class="form-control" id="email" required/>
+					    <input type="email" class="form-control" autocomplete="off" id="email" required/>
 					 	<div id="errorEmail"></div>
 					  </div>
 					  <div class="form-group">
-					    <label for="pwd">Password:</label>
-					    <input type="password" class="form-control" id="pwd" required/>
+					    <label for="password">Password:</label>
+					    <input type="password" class="form-control" id="password" required/>
 					    <div id="errorPwd"></div>
 					  </div>
 					  <div class="form-group">
@@ -127,7 +130,7 @@
 			</div>
 		</div>	
 	</div>
-	<div class="container" id="footer" data-toggle="popover" data-trigger="hover" data-placement="top" title="This is my personal practice site. I don't own any rights to any images or content! Meant for my studying and practicing purposes only!">
+	<div class="container" id="footer" data-toggle="popover" data-trigger="hover" data-placement="top" title="This is my personal practice site. I don't own any rights to any images, writing or information! Meant for my studying and practicing purposes only!">
 		<div class="row">	
 			<ul class="nav nav-pills nav-justified text-center list-unstyled">
 				<li>Feedback</li>

@@ -4,17 +4,20 @@ $(function () {
 
 $(document).ready(function(){
     $("#one,#about").click(function(){
-        $("#two,#three ").toggle();
-        $("#about").toggle();
+        $("#about,#two,#three").toggle();
     });
 
+   /* $("#about,#one").click(function(){       
+        $("#about").toggle( "clip", {direction: "vertical"}, 1500 );
+        $("#one,#two,#three").toggle();
+    });*/
+
+
     $("#two,#projetDivRight,#projetDivLeft").click(function(){
-        $("#one,#three,#projetDivRight,#projetDivLeft").toggle();
-        $("#two").toggleClass("xs-hidden");
-  });
+        $("#one,#two,#three,#projetDivRight,#projetDivLeft").toggle();
+    });
 
     $("#three").click(function(){
-    	$(this).find('img').toggle();
-    })
-
+    	$(this).find('img').slideToggle(1000);
+    });
 });

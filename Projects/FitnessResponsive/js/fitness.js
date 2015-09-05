@@ -45,23 +45,25 @@ $(function(){
 
 /*-------------------------------   Slider Home Page ------------------------------------ */
 $(function(){
+	
 	var $slider = $("#lowerBodySlider");
 	var $slides = $slider.find(".slides");
 	var $slide = $slider.find(".slide");
 	var tracker=1;
+	var width = "877";
 	var timer;
 	function start(){  
 		timer = setInterval(function(){
-			$slides.animate({"margin-left":"-=877px"},1000,function() {
+			$slides.animate({"margin-left" : "-=" + width},1000,function() {
 				tracker++;
-				if( tracker === $slide.length )
+				if(tracker === $slide.length )
 				{
 					tracker = 1;
 					$slides.css("margin-left", 0);
 				}
 			});
 	},
-	3000);
+	2000);
 	};
 	function stop(){
 		clearInterval(timer);
@@ -74,85 +76,96 @@ $(function(){
 
 /*--------------------------------  Form Validation ----------------------------------*/
 $(document).ready(function(){ 
-	
-	function signUpValidation(e){
-		// Caching DOM
+	var $namesPattern = /^[A-Za-z]+$/;
+	var $pwdPattern = /([a-zA-Z0-9!%&@*#]{8,})/;
+	var $errorFname = $("#errorFname");
+	var $errorLname = $("#errorLname");
+	var $errorPwd = $("#errorPwd");
+	var $errorPwdCheck = $("#errorPwdCheck");
+
+
+		
+	function validate(){
+		var result = checkFname();
+		if (result){
+			result = checkLname();
+		}
+		if (result){
+			result = checkPwd();
+		}
+		return result;
+	}
+
+	function checkFname(){
 		var $fname = $("#fname").val();
-		var $lname = $("#lname").val();
-		var $pwd = $("#pwd").val();
-		var $pwdCheck = $("#pwdCheck").val();		
-		var $errorFname = $("#errorFname");
-		var $errorLname = $("#errorLname");
-		var $errorPwd = $("#errorPwd");		
-		var $errorPwdCheck = $("#errorPwdCheck");
-
-		var $namesPattern = /^[A-Za-z]+$/;
-		var $pwdPattern = /^[A-Za-z0-9#@!$%\^&\*]+$/i;
-
-		// form fields checks
-		function checkFname(){
-			if( !$fname.match($namesPattern) ){
-				$errorFname.html("Please enter valid First Name!")
-				$errorFname.addClass("error");
-				return false;
-			}
-			else{
-				return true;
-			}
-		}
-		function checkLname(){
-			if( !$lname.match($namesPattern) ){
-				$errorLname.html("Please enter valid Last Name!");
-				$errorLname.addClass("error");
-				return false;
-			} 	
-			else{
-				return true;
-			}
-		}
-		function checkPwd(){	
-			if( !$pwd.match($pwdPattern) ){
-				$errorPwd.html("Password must contain at-least one Uppercase,Lowercase,Number and a special character!");
-				$errorPwd.css("color",'red');
-				return false;
-			}
-			else{
-				return true;
-			}
-
-		function checkPswdMatch(){
-			if( $pwd === $pwdCheck ){
-				return true;
-			}
-			else{
-				$errorPwdCheck.css("color",'red');
-				$errorPwdCheck.html("Passwords donot match!");
-				return false;
-			}
-		}
-		// form action submit
-		/*if(($errorFname == "") && ($errorLname == "") && ($errorPwd == "") && ($errorPwdCheck == ""))
-		{
-			return true;
+		if( !$namesPattern.test($fname) ){
+			$errorFname.html("Please enter valid first name!")
+			$errorFname.addClass("error");
+			return false;
 		}
 		else{
+			$errorFname.html("");
+			return true;
+		}
+	}
+	function checkLname(){
+		//alert("2");
+		var $lname = $("#lname").val();
+		if( !$namesPattern.test($lname) ){
+			$errorLname.html("Please enter valid last name!");
+			$errorLname.addClass("error");
 			return false;
-		}*/
-		checkFname();
-		checkLname();
-		checkPwd();
-		checkPswdMatch();
-
+		} 	
+		else{
+			$errorLname.html("");
+			return true;
+		}
 	}
-	//$("#singUpForm").submit(signUpValidation);
+	function checkPwd(){
+		var $password = $("#password").val();
+		var $pwdCheck = $("#pwdCheck").val();
+		
+		if( !$pwdPattern.test($password) ){
+			$errorPwd.html("Password must contain at-least one uppercase, lowercase, number and a special character!");
+			$errorPwd.css("color",'red');
+			return false;
+		} else {
+			$errorPwd.html("");
+		} 
 
-	$("#singUpForm").submit(signUpValidation(e))
-	{
-  		alert( "Handler for .submit() called." );
-  		event.preventDefault();
+		
+
+		if ($password !== $pwdCheck){
+			$errorPwdCheck.css("color",'red');
+			$errorPwdCheck.html("Passwords do not match!");
+			return false;			
+		} else {
+			$errorPwdCheck.html("");
+		}
+
+		
+		$errorPwd.html("");
+		$errorPwdCheck.html("");
+		return true;
 	}
 
-}})
+	$("#singUpForm").submit (function (e){
+		var ans = confirm("Do you want to submit your form!");
+		if (ans){
+			e.preventDefault();
+			var result = validate();
+			if (result){
+				alert ("Thank you, your form has been submitted.");
+				window.location.reload();
+			} else {
+				alert ("There was an error in the form, please correct and submit again.");
+			}
+			
+		}
+		
+		
+	});
+});
 
 /*---------------------------------- Set Cookie ---------------------------------------*/
 
