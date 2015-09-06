@@ -34,7 +34,8 @@ $(document).ready(function(){
 
 
     $("#three").click(function(){
-         $("#three > span").toggle("explode", {direction: "vertitcal"}, 1500);
+         var span = $("#three").find("span");
+         $(span).toggle();
     });
 
 });
