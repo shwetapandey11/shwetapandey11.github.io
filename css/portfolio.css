@@ -80,9 +80,6 @@ p.textBelow:hover{
 #about p{
 	color: gray;
 }
-/*#about{
-	margin-bottom: 15px;
-}*/
 #contactInfo{
 	height: 150px;
 }.heading{
@@ -111,8 +108,4 @@ p.textBelow:hover{
 }
 img{
 	margin: 0 auto;
-}
-#lowerBody >.xs-col-11{
-/*	min-height: 600px;
-*/
 }
