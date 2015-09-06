@@ -3,21 +3,38 @@ $(function () {
 });
 
 $(document).ready(function(){
-    $("#one,#about").click(function(){
-        $("#about,#two,#three").toggle();
+
+    /*-----------  About Effects     -------------*/
+
+    $("#one").click(function(){
+        $("#about").toggle("clip",1500);
+        $("#one,#two,#three").hide();
+    });
+    $("#about").click(function(){
+        $("#one,#two,#three,#about").toggle();
     });
 
-   /* $("#about,#one").click(function(){       
-        $("#about").toggle( "clip", {direction: "vertical"}, 1500 );
-        $("#one,#two,#three").toggle();
-    });*/
+    /*-----------  Projects Effects     -------------*/
 
+    $("#two").click(function(){
 
-    $("#two,#projetDivRight,#projetDivLeft").click(function(){
+        $("#projetDivRight,#projetDivLeft").toggle( "bounce",1500);
+
+        $("#one,#two,#three").hide();
+
+    });
+
+    $("#projetDivRight,#projetDivLeft").click(function(){
+
         $("#one,#two,#three,#projetDivRight,#projetDivLeft").toggle();
+
     });
+
+    /*-----------  Contact Effects     -------------*/
+
 
     $("#three").click(function(){
-    	$(this).find('img').slideToggle(1000);
+         $("#three > span").toggle("explode", {direction: "vertitcal"}, 1500);
     });
+
 });

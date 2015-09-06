@@ -1,12 +1,7 @@
-#body{
-	/*background-color: #faf2e5;
-	background-color: #b01111;*/
-}
 #topBody{
 	/*background-color: #f0f0ef;*/
 	background-color: black;
 	min-height: 280px;
-	max-height: auto;
 	overflow: hidden;
 	margin-bottom: 10px;
 	color: white;
@@ -17,17 +12,11 @@
 }
 #lowerBody{
 	background-color: #f0c310;
-	/*background-color: #f0f0ef;*/
 	min-height: 300px;
 	max-height: auto;
 	font-family: Optima, Helvetica, Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: white;
-}
-#initialHiddenImage{
-	display: none;
-	width: 230px;
-	margin: 0 auto;
 }
 .imgClass{
 	margin-top: 16px;
@@ -46,14 +35,6 @@ p footer{
 	color: white;
 	padding-top: 5px;
 }
-#codeImg{
-	opacity: 1;
-	border-image-width: 5%;
-}/*
-.block{
-	width: 200px;
-	margin-top:	10px; 
-}*/
 p.textBelow{
 	color: white;
 	padding-left: 25px;
@@ -70,15 +51,25 @@ p.textBelow:hover{
 	-o-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	margin-top: 30px;
 	border: 5px solid #f0c310;
-	padding: 10px;
+	border: 5px solid #F8E188;
 	display: none;
-	min-height: 200px;
+	margin-top: 0.5%;
+}
+#projetDivLeft,#projetDivRight{
+	margin-top: 2%;
+    min-height: 250px;
+    padding: 1%;
+}
+#initialHidImg{
 	display: none;
 }
-#about p{
-	color: gray;
+#three > span{
+	width: 360px;
+	margin: 0 auto;
+}
+#about{
+	color: gray;	
 }
 #contactInfo{
 	height: 150px;
