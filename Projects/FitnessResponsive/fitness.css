@@ -1,19 +1,29 @@
 
-
 @import url(https://fonts.googleapis.com/css?family=Fascinate+Inline);
 
 @font-face{
 	font-family: "limilations"; 
 	src: url('fonts/ThickDeco.ttf');
 }
-
+@media only screen and (max-width: 400px){
+	#welcomeTextText > h1{
+		font-size: 2em;
+	}
+	#welcomeTextText > h2{
+		font-size: 1.5em;
+	}
+}
 /*---------------------------    Home Page       ----------------------------*/
 #welcomeText{
 	font-family: 'limilations', Optima, 'Helvetica Neue', sans-serif;
 	padding-top: 6%;
 	-webkit-color:#b01;
 	color: #fff;
-	height: 445px;
+	height: auto;
+	
+}
+#welcomeTextText{	
+
 }
 #body{
 	background: url("images/bg.gif");
@@ -23,19 +33,12 @@
 	background-color: white;
 }
 .large{
-	font-size: 45px;
+	font-size: 3em;
 }
 .homeRow{
 	padding: 0;
-	height: 445px;
- 	background: linear-gradient(#FF6699, #66FF99);
- 	-moz-background: linear-gradient(#b01, #F0F0FF);
- 	-o-background: linear-gradient(#b01, #F0F0FF);
- 	-ms-background: linear-gradient(#b01, #F0F0FF);
- 	background: linear-gradient(#b01, #F0F0FF);
-	/*------  Safari fix  ------*/
- 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bb0011), color-stop(100%,#f0f0ff));  Chrome,Safari4+ 
-	background: -webkit-linear-gradient(top, #bb0011 0%,#f0f0ff 100%); /* Chrome10+,Safari5.1+ */
+	height: auto;
+	border-top: 1px solid transparent;
 }
 .banner{
 	background-color: #bb0011;
@@ -44,10 +47,13 @@
 .buttons{
 	margin-top: 10px;
 }
+.navbar-toggle > span {
+	background-color: #888;
+}
 .nav li a{
 	color: #660000;
 	color: #bb0011;
-	font-size: 2em;
+	font-size: 1.6em;
 	font-family: 'Fascinate Inline', Optima, 'Helvetica Neue',Verdana, sans-serif;
 	background-color: #fff;
 }
@@ -56,42 +62,64 @@
 	color: white;
 	border-top: 1px solid white;
 }
-.nav{
-	border-bottom: 2px solid #bb0011; 
+.navbar-collapse{
+	width: auto;
+	border-bottom: 0.1px solid #ccc;
 }
 #footer{
 	background-color: #bb0011;
 	color: white;
 	padding: 1%;
 }
+#containmentParent{
+	border-top: 5px solid #fff;
+	border-bottom: 0.5px solid #fff;
+}
 #containmentParent > .row{
 	min-height: 380px;
+	background: linear-gradient(#F0F0FF,#FF6699);
+ 	-moz-background: linear-gradient(to right,#F0F0FF,#b01);
+ 	-o-background: linear-gradient(to right,#F0F0FF,#b01);
+ 	-ms-background: linear-gradient(to right,#F0F0FF,#b01);
+ 	background: linear-gradient(to right,#F0F0FF,#b01);
+	/*------  Safari fix  ------*/
+ 	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#bb0011), color-stop(100%,#f0f0ff));  Chrome,Safari4+ 
+	background: -webkit-linear-gradient(top, #bb0011 0%,#f0f0ff 100%); /* Chrome10+,Safari5.1+ */
 }
 /*  ---------Slider-------- */
 
 #lowerBodySlider{
-	max-height: 445px;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
+	width: 877px%;
+ 	height: 455px;
 }
 #lowerBodySlider .slides{
-	display: block;
 	width: 5262px;
 	height: 445px;
 	list-style-type: none;
 	padding: 0px;
 	overflow: hidden;
 }
-#lowerBodySlider .slide{
+.slide{
 	float: left;
-	max-height: 445px;
+	height: auto;
 	padding: 0px;
-	width:877px;
-	margin: 0 atuo;
+	width:16.67%;
+	overflow: hidden;
 }
-
+.image > img{
+	width: 877px;
+	height: 455px;
+	float: left;
+	padding: 0px;
+}
+ .visible-xs{
+ 	padding: 0;
+ }
 /* ---------- sub-pages ------------ */
+
 h5,h4{
 	margin: 20px auto;
 }

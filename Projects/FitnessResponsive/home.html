@@ -23,14 +23,18 @@
 	<div class="row">
 		<div class="col-md-8">
 
-			<div>						
+			<div class="navbar-header">
 				<a href="home.html">
 					<img src="images/fitness.gif" alt="logo" height="80px" width="200px">
 				</a>
+
+				<button type="button" class="navbar-default navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>                        
+			    </button>
 			</div>
-
 		</div>
-
 		<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-6 buttons text-center">
 			
 			
@@ -89,26 +93,31 @@
 <!-- Naviagation Menu -->
 	<div class="container">
 		<div class="row">
-			<ul class="nav navbar-pills nav-justified">
-				<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
-				<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
-				<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
-				<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
-				<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
-			</ul>	
+		         <div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-pills nav-justified">
+						<li><a href="yoga.html"><span id="yoga">Y</span>oga</a></li>
+						<li><a href="aquatics.html"><span id="aquatics">A</span>quatics</a></li>
+						<li><a href="cardio.html"><span id="cardio">C</span>ardio</a></li>
+						<li><a href="zumba-z.html"><span id="zumba">Z</span>umba</a></li>
+						<li><a href="pilates.html"><span id="pilates">P</span>ilates</a></li>
+					</ul>	
+				</div>
 		</div>
 	</div>
 <!-- slider col -->
 	<div class="container" id="containmentParent">
 		<div class="row">
+			<div class="col-md-8 visible-xs">
+				<img src="images/zumbaSlide877x455.gif" width="100%" height="auto">
+			</div>
 			<div class="col-md-8 hidden-xs homeRow" id="lowerBodySlider">
 				<div class="slides">
-					<img class="slide img-responsive" src="images/yogaSlide877x455.gif">	
-					<img class="slide img-responsive" src="images/aquaticsSlide877x455.gif">	
-					<img class="slide img-responsive" src="images/cardioSlide877x455.gif">	
-					<img class="slide img-responsive" src="images/zumbaSlide877x455.gif">	
-					<img class="slide img-responsive" src="images/pilatesSlide877x455.gif">	
-					<img class="slide img-responsive" src="images/yogaSlide877x455.gif">	
+					<div class="image"><img class="slide img-responsive" src="images/yogaSlide877x455.gif"></div>
+					<div class="image"><img class="slide img-responsive" src="images/aquaticsSlide877x455.gif"></div>	
+					<div class="image"><img class="slide img-responsive" src="images/cardioSlide877x455.gif"></div>	
+					<div class="image"><img class="slide img-responsive" src="images/zumbaSlide877x455.gif"></div>	
+					<div class="image"><img class="slide img-responsive" src="images/pilatesSlide877x455.gif"></div>	
+					<div class="image"><img class="slide img-responsive" src="images/yogaSlide877x455.gif"></div>	
 				</div>				
 			</div>
 

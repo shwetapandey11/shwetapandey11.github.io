@@ -63,7 +63,7 @@ $(function(){
 				}
 			});
 	},
-	4000);
+	3000);
 	};
 	function stop(){
 		clearInterval(timer);
