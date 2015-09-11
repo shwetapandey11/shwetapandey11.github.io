@@ -58,6 +58,7 @@ $(document).ready(function(){
 
 	$("#myModal").draggable({containment: "#body", scroll: false});
 
+	$("msg > row").css("pading","10px");
 });
 
 

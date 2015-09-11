@@ -7,7 +7,7 @@
 
   <link rel="icon" type="images/ico" href="images/IstyBitsy.ico" sizes="16x16">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="ItsyBitsy.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  <link rel="stylesheet" href="ItsyBitsy.css"/>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button> 
-          <a class="navbar-brand" href="ItsyBitsy.html"><span class="letter1">I</span>tsy <span class="letter1">B</span>itsy</a>
+          <a class="navbar-brand" id=" active" href="ItsyBitsy.html"><span class="letter1">I</span>tsy <span class="letter1">B</span>itsy</a>
       </div>
     
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -45,6 +45,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
               <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -61,7 +62,7 @@
   </div>
 
   <div id="home" class="container">
-   
+  <div class="row"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -102,6 +103,7 @@
     </a>
   </div>
 </div>
+</div>
 
   <!-- log In Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -140,8 +142,8 @@
           </div>
         </div>
 
-     <div id="msg" class="msg2 container">
-      <div class="row">
+     <div id="msg2" class="container">
+      <div class="row bg-danger">
         <h3>Coupons and Promotions</h3>
         <p>Scrolling MSG</p>
       </div>
@@ -150,49 +152,41 @@
   <div class ="container" id="lowerBody">
   <div class="row">
       <div id="dress" class="col-md-4 itemRow one">
-        <h1><a href="dress.html">Girls Dress</a></h1>
-         <p><a href="dress.html">Visit Now</a></p>
+        <h1><a href="dress.html">Shop <br/>Girl's Dresses <br/> Go <i class="fa fa-smile-o"></i></a></h1>
+
       </div>
 
       <div id="shirts" class="col-md-4 itemRow two">
-        <h1><a href="shirts.html">Boys Shirts</a></h1>
-        <p><a href="shirts.html">Visit Now</a></p> 
+        <h1><a href="shirts.html">Shop <br/>Boy's Shirts <br/> Go <i class="fa fa-futbol-o fa-spin"></i></a></h1>
       </div>
 
        <div id="jeans" class="col-md-4 itemRow one">
-        <h1><a href="jeans.html">Jeans </a></h1>
-         <p><a href="jeans.html">
-          <span class="glyphicon glyphicon-asterisk editIcon" aria-hidden="true"></span><br/>      
-          </a>
-        </p>   
+        <h1><a href="jeans.html">Shop <br/>Kids Jeans <br/> Go <i class="fa fa-bicycle"></i></a></h1>
       </div>
 
       <div id="babycare" class="col-md-4 itemRow two">
-        <h1><a href="babycare.html">Baby Care</a></h1>
-        <p><a href="babycare.html">Visit Now</a></p>  
+        <h1><a href="babycare.html">Shop <br/>Baby Care Items<br/> Go <i class="fa fa-umbrella"></i></a></h1>
       </div>
 
       <div id="babygear" class="col-md-4 itemRow one">
-        <h1><a href="babygear.html">Baby Gear</a></h1>
-         <p><a href="babygear.html">Visit Now</a></p>   
+        <h1><a href="babygear.html">Shop <br/>Baby Gear Items<br/> Go <i class="fa fa-cogs"></i></a></h1>
       </div>
 
       <div id="babyfood" class="col-md-4 itemRow two">
-        <h1><a href="babyfood.html">Baby Food</a></h1>
-         <p><a href="babyfood.html">Visit Now</a></p>  
+        <h1><a href="babyfood.html">Shop <br/>Baby Food Items<br/> Go <i class="fa fa-heart"></i></a></h1>
       </div>
 
        <div id="nursery" class="col-md-4 itemRow one">
-        <h1><a href="nursery.html">Nursery</a></h1>       
-         <p><a href="nursery.html">Visit Now</a></p> 
+        <h1><a href="nursery.html">Shop <br/>Nursery Necessities<br/> Go <i class="fa fa-moon-o"></i></a></h1>
         </div>
+
        <div id="toys" class="col-md-4 itemRow two">
-        <h1><a href="toys.html">Toys</a></h1>
-         <p><a href="toys.html">Visit Now</a></p>   
+        <h1><a href="toys.html">Shop for <br/> Hundreds of Toys<br/> Go <i class="fa fa-star fa-spin"></i></a>
+        </h1>
       </div>
       <div id="order" class="col-md-4 itemRow one">
-        <h1><a href="order.html">Order</a></h1>
-         <p><a href="order.html">Visit Now</a></p>  
+        <h1><a href="order.html">Cart Ready<br/>Order Now<br/> Go <i class="fa fa-shopping-cart"></i></a>
+
       </div>
   </div>
   </div>
