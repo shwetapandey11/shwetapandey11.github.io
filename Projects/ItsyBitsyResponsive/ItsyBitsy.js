@@ -28,22 +28,27 @@ $(document).ready(function(){
 			$.each (arrayItems, function(j){
 				var eachItem = arrayItems[j];
 				
-				html += "<li>" + eachItem.name.replace(/-/g," ")+ "<br/><br/>";
+				html += "<li><div class='itemName'>" + eachItem.name.replace(/-/g," ")+ "</div>";
 				if (eachItem.img){
-					html += "<img src='" + eachItem.img + "' border=0/><br/>"; 
+					html += "<div class='itemImage'><img src='" + eachItem.img + "' border=0></div>"; 
 				} else {
-					html += "<img src='images/Frock1.jpg'/>";
+					html += "<div class='itemImage'><img src='images/Frock1.jpg'/></div>";
 				}
-				html += "<br/>" + eachItem.price + "</li>";
+				html += "<div class='itemPrice'>" + eachItem.price + "</div></li>";
 			});
 			element.append(html);
 
 
-			$("li img").hover(function(){	
-				$(this).addClass("zoomImg", 1000, "easeOutBounce");
-				},function(){
-					$(this).removeClass('zoomImg');
-				});
+			$("li img").mouseover(function(){
+				//alert ($(this).html());	
+				$(this).css({"height": "150px", "width":"150px", "cursor": "pointer"});
+
+				
+			});
+			$("li img").mouseout(function(){	
+				//$(this).toggleClass("zoomImg", 1000, "easeOutBounce");
+				$(this).css({"height": "138px", "width":"138px"});
+			});	
 	})};
 });
 

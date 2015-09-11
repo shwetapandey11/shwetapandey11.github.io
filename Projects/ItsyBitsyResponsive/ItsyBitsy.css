@@ -165,17 +165,34 @@ h5.footHead{
 #msg > .sign{
   background-color: yellow;
 }
-.displayItem > li > img{
+
+
+.displayItem > li {
+  padding:0px;
+  width:220px;
+}
+
+ul.displayItem > li > div> img{
   width: 138px;
   height: 138px;
 }
+
 .displayItem > li{
   min-height: auto;
-  height: 410px; 
+  height: 310px; 
 }
 .zoomImg{
   height: 150px;
   width: 150px;
+}
+
+.itemImage{
+  width:150px;
+  margin:10px auto;
+}
+
+.itemPrice{
+  
 }
 
 /*---------------------------  form ---------------------------*/
