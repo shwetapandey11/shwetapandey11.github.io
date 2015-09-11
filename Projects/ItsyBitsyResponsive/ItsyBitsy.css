@@ -1,0 +1,213 @@
+@font-face{
+  font-family: "CurlyStars";
+  src: url("Fonts-Itsy/CurlyStars.ttf");
+}
+
+@media only and (max-width: 320px){
+  h1{
+    font-size: 1em; 
+  }
+}
+/*----------------------- scroll spry ------------------*/
+body {
+  position: relative; 
+}
+.affix {
+  position: relative;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.affix ~ .container {
+  position: relative;
+  top: 50px;
+}
+.navbar-fixed-bottom, .navbar-fixed-top{
+  position: relative;
+}
+/* ------------------ main nav ----------------*/
+.navbar{
+  margin-bottom: 10px;
+}
+.navbar-header > .navbar-brand{
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: CurlyStars,Times,serif;
+}
+.navbar-header > .navbar-brand > .letter1{
+  color: #B26B8F;  
+  font-size: 1.8em;
+}
+
+
+/* ------------------ scrolling msg ----------------*/
+
+#msg{
+  color: gray;
+  border: 5px solid transparent;
+  border-radius: 4px;
+  margin: 5px auto;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#msg .msg2{
+  margin-top: 5px;
+}
+
+/*---------------------- sub - links -----------------*/
+
+#dress,#shirts,#jeans,#babycare,#babygear,#babyfood,#nursery,#toys{
+  padding-top:15px;
+  margin-top: 0.2px;
+  position: relative;
+}
+/*#home{
+  padding: 0;
+}*/
+.itemRow > h1{
+  width: 100%;
+}
+.itemRow > h1 > a{
+  color: pink;
+  font-family: CurlyStars,Times,serif;
+  font-size: 1em;
+  line-height: 56px;
+}
+.itemRow > p > a {
+  color:  white; 
+  position: relative;
+}
+.itemRow > p{
+  text-align: left;
+}
+.editIcon, .editIcon a {
+  color: #fff;
+  font-size: 4em; 
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+}
+.one{
+  background-color: #6666cc;
+  border-right: 1px solid transparent;
+}
+.two{
+  background-color: #993399;
+}
+.itemRow > h1 > a {
+  color: white;
+}
+/*---------------------- FOOTER -----------------*/
+
+#footer{
+  height: auto;
+  border-top: 2px solid transparent; 
+  text-align: center;
+  background-color: #f8f8f8;
+  margin: 20px auto;
+  text-decoration: none;
+  padding: 20px;
+}
+.footL > a {
+  color: #888;
+}
+h5.footHead{
+  color: #888;
+  font-weight: bold;
+}
+#bootomFooter{
+  margin: 30px auto;
+}
+/*---------------------------  Carousal ---------------------------*/
+#myCarousel img{
+  height: auto;
+  width: 100%;
+  padding: 0;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+#myCarousel{
+  width: auto;
+  margin: 0 auto;
+}
+/* ----------------------------- lowerbody --------------------------*/
+
+.itemRow{
+  height: 300px;
+  border-radius: 3px;
+/*  box-shadow: 2px 2px 5px #fcfcfc;
+*/}
+
+/*---------------------------  Ajax ---------------------------*/
+
+.displayItem{
+
+  list-style-type: none;  
+  padding: 0 auto;
+  height: auto;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.displayItem > li {
+  text-transform: capitalize;
+  height: auto; 
+  padding: 20px 35px;
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+/*---------------------------  sub-pages ---------------------------*/
+#msg > .sign{
+  background-color: yellow;
+}
+.displayItem > li > img{
+  width: 138px;
+  height: 138px;
+}
+.displayItem > li{
+  min-height: auto;
+  height: 410px; 
+}
+.zoomImg{
+  height: 150px;
+  width: 150px;
+}
+
+/*---------------------------  form ---------------------------*/
+
+form{
+  padding: 20px;
+}
+
+.container > #form{
+  width: 100%;  
+}
+
+#form{
+  background-color: #fdfdfd;
+  margin-bottom: 5px;
+  padding: 40px;
+  border-radius: 5px;
+  border: 2px solid #f8f8f8;
+}
+#payment_group{
+  width: auto;
+  margin: 0 auto;
+}
+.form-group > #payment{
+  padding-left: 15px;
+  width: 20%;
+  margin: 0 auto;
+  display: inline-block;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  min-width: 100px;
+ }
+
+
+

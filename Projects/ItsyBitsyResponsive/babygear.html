@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baby Gear</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="images/ico" href="images/IstyBitsy.ico" sizes="16x16">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ItsyBitsy.css"/>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
+    <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button> 
+          <a class="navbar-brand" href="ItsyBitsy.html"><span class="letter1">I</span>tsy <span class="letter1">B</span>itsy</a>
+      </div>
+    
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Layettes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="dress.html">Dress</a></li>
+                <li><a href="shirts.html">Shirts</a></li>
+                <li><a href="jeans.html">Jeans</a></li>
+              </ul>
+            </li>
+            <li><a href="babycare.html">Baby Care</a></li>
+            <li><a href="babygear.html">Baby Gear</a></li>
+            <li><a href="babyfood.html">Baby Food</a></li>
+            <li><a href="nursery.html">Nursery</a></li>
+            <li><a href="toys.html">Toys</a></li>
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>    
+<!-- log In Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div id="draggable" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Please Sign-in below:</h4>            
+              </div>
+              <div class="modal-body">
+                  <form role="form">
+                
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>
+                
+                <div class="checkbox">
+                  <label><input type="checkbox"> Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-info">Submit</button>
+              </form>
+              </div>
+
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+   <div id="msg" class="container">
+    <h1>All you can wish is HERE</h1>
+    <p>Don't wait! Order Now</p>
+  </div> 
+
+    <div id="babygear" class="container">
+      <h3>Baby Gear</h3>
+      <ul class="displayItem">
+
+      </ul>
+
+    </div>
+  
+  <div id="footer" class="container">
+    <div class="row">    
+      <div id="footer1" class="col-md-2 col-md-offset-1">
+          <h5 class="footHead" >Our Story</h5>
+            <p class="footL">
+                  <a href="#">Itsy Bitsy</a><br />
+                  <a href="#">Headquarters</a><br />
+                  <a href="#">Careers</a><br />
+                  <a href="#">News Letters</a>
+            </p>
+      </div>
+
+      <div id="footer2" class="col-md-2">
+          <h5 class="footHead">Shipping & Returns</h5>
+          <p class="footL">
+                <a href="#">Track Shipment</a><br />
+                <a href="#">Returns</a><br />
+                <a href="#">Shipping Policy</a><br />
+          </p>
+      </div>
+
+      <div id="footer3" class="col-md-2">
+          <h5 class="footHead">Customer Support</h5>
+          <p class="footL">
+                <a href="#">Customer Service</a><br />
+                <a href="#">Contact via Email</a><br />
+                <a href="#">Call Us</a>
+          </p>
+      </div>
+
+      <div id="footer4" class="col-md-2">
+          <h5 class="footHead">Country</h5>
+          <p class="footL">
+              <a href="#">United States</a><br />
+              <a href="#">Outside US</a>
+          </p>
+      </div>
+
+      <div id="footer5" class="col-md-2">
+          <h5 class="footHead">Stay Connected</h5>
+          <p class="footL">
+            <a href="#">Google+</a><br />
+            <a href="#">Facebook</a><br />
+            <a href="#">Twitter</a>
+          </p>
+      </div>
+    </div>
+
+    <div class="row text-center footL" id="bootomFooter">
+      <a href="#">Gift-Cards | </a> 
+      <a href="#">Site-Map | </a>
+      <a href="#">Privacy-Policy | </a> 
+      <a href="#">Copyright2015-ItsyBitsyLLC</a></h6>       
+    </div>
+
+  </div>
+</div>
+
+    <script type="text/javascript" src="ItsyBitsy.js"></script>
+</body>
+</html>
