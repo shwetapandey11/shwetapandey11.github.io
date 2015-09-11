@@ -150,7 +150,7 @@ h5.footHead{
   list-style-type: none;  
   padding: 0 auto;
   height: auto;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -171,10 +171,7 @@ h5.footHead{
 ul.displayItem{
   padding-left: -20px;
 }
-.displayItem > li {
-  padding:0px;
-  width:220px;
-}
+
 
 ul.displayItem > li > div> img{
   width: 138px;
@@ -183,20 +180,36 @@ ul.displayItem > li > div> img{
 
 .displayItem > li{
   min-height: auto;
-  height: 310px; 
+  height: 380px; 
 }
 .zoomImg{
   height: 150px;
   width: 150px;
 }
-
 .itemImage{
   width:150px;
   margin:10px auto;
 }
-
-.itemPrice{
-  
+.checkboxCookie{
+  height: 1.5em;
+  padding: 2px;
+  width: 15px;
+/*  margin: 0 auto; 
+*/  margin: 35% auto auto 40%;
+}
+.checkboxCookie input[type="checkbox"]{
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.checkboxCookie > i {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #337ab7;
+  float: left;
+  padding-right: 5px; 
 }
 
 /*---------------------------  form ---------------------------*/
