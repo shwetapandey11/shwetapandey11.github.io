@@ -129,6 +129,9 @@ h5.footHead{
 #bootomFooter{
   margin: 30px auto;
 }
+#bootomFooter > p > a {
+  color: #888;
+}
 /*---------------------------  Carousal ---------------------------*/
 #myCarousel img{
   height: auto;
