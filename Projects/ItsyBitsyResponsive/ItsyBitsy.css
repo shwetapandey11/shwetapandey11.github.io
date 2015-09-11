@@ -80,13 +80,6 @@ body {
 .itemRow > p{
   text-align: left;
 }
-.editIcon, .editIcon a {
-  color: #fff;
-  font-size: 4em; 
-  position: absolute;
-  bottom: 15px;
-  right: 5px;
-}
 .one{
   background-color: #6666cc;
   border-right: 1px solid transparent;
@@ -96,6 +89,24 @@ body {
 }
 .itemRow > h1 > a {
   color: white;
+}
+
+.itemRow{
+  height: 300px;
+  border-radius: 3px;
+/*  box-shadow: 2px 2px 5px #fcfcfc;
+*/}
+/* ----------------------------- glyphicon edit --------------------------*/
+
+.itemRow > p {
+  position: relative;
+}
+.editIcon, .editIcon a {
+  color: #fff;
+  font-size: 4em; 
+  position: relative;
+  bottom: 5px;
+  right: 5px;
 }
 /*---------------------- FOOTER -----------------*/
 
@@ -130,13 +141,6 @@ h5.footHead{
   width: auto;
   margin: 0 auto;
 }
-/* ----------------------------- lowerbody --------------------------*/
-
-.itemRow{
-  height: 300px;
-  border-radius: 3px;
-/*  box-shadow: 2px 2px 5px #fcfcfc;
-*/}
 
 /*---------------------------  Ajax ---------------------------*/
 
@@ -166,7 +170,9 @@ h5.footHead{
   background-color: yellow;
 }
 
-
+ul.displayItem{
+  padding-left: -20px;
+}
 .displayItem > li {
   padding:0px;
   width:220px;
