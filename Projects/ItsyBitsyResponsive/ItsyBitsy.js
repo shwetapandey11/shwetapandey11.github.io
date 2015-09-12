@@ -36,8 +36,17 @@ $(document).ready(function(){
 				}
 				html += "<div class='itemPrice'>" + eachItem.price + "</div>";
 
+				var incart = isItemInCart(eachItem.id);
+				var onclickFunc = null;
+				if (!incart){
+					onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
+				} else {
+					onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
+				}
+				 
+				html += "<div><button onclick='" + onclickFunc + "' class='btn btn-warning'><i class='fa fa-cart-plus'></i>Add to Cart</div>";
 
-				html += "<div class='checkbox'><p class='checkboxCookie text-center'><i class='fa fa-cart-plus'></i><input type='checkbox' id='checkboxCart'/></p></div></li>";
+				html += "</li>";
 
 
 				/*var info = "<i class='fa fa-info-circle'></i>";
@@ -78,15 +87,15 @@ $(document).ready(function(){
 
 /*----------------------------------  cookie ---------------------------------------*/
 
-function setCookie(cart,cvalue,exdays) {
+function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
-    document.cookie = cart+"="+cvalue+"; "+expires;
+    document.cookie = cname+"="+cvalue+"; "+expires;
 }
 
 function getCookie(cname) {
-    var name = cart + "=";
+    var name = cname + "=";
     var ca = document.cookie.split(';');
     for(var i=0; i<ca.length; i++) {
         var c = ca[i];
@@ -124,16 +133,20 @@ function isItemInCart (itemId){
 }
 
 function addItemToCookie(itemId){
+	console.log (itemId + " adding to cookie");
 	if (!isItemInCart){
 		var cookies = getCookie("cart");
 		cookies += ":"  + itemId;
 		setCookie("cart", cookies);
+		console.log ("setting cookie:" + cookies);
 	}
 }
 
-function remoteItemFromCookie(itemId){
+function removeItemFromCookie(itemId){
 	if (isItemInCart){
 		var cookies = getCookie("cart");
-		
+		var searchString = ":" + itemId;
+		var newvalue = cookies.replace(searchString, "");
+		setCookie("cart", newvalue);
 	}
 }

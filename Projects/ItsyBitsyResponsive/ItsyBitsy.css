@@ -3,30 +3,11 @@
   src: url("Fonts-Itsy/CurlyStars.ttf");
 }
 
-@media only and (max-width: 320px){
-  h1{
-    font-size: 1em; 
-  }
-}
-/*----------------------- scroll spry ------------------*/
-body {
-  position: relative; 
-}
-.affix {
-  position: relative;
-  width: 100%;
-  z-index: 9999 !important;
-}
-.affix ~ .container {
-  position: relative;
-  top: 50px;
-}
-.navbar-fixed-bottom, .navbar-fixed-top{
-  position: relative;
-}
 /* ------------------ main nav ----------------*/
 .navbar{
-  margin-bottom: 10px;
+  margin: 0 auto ;
+  max-height: 90px;
+  white-space: nowrap;
 }
 .navbar-header > .navbar-brand{
   font-weight: bold;
@@ -37,24 +18,31 @@ body {
   color: #B26B8F;  
   font-size: 1.8em;
 }
-
+/*.navbar .navbar-default .navbar-fixed-top{
+  margin-bottom: 10px;
+}*/
 
 /* ------------------ scrolling msg ----------------*/
 
 #msg, #msg2{
   color: gray;
-  border-radius: 4px;
-  margin: 5px auto;
+  border-radius: 4px;/*
+  margin: 5px auto;*/
 /*  background-color: #993399;
 */text-align: center;
 }
 
-#msg, #msg2{
+#msg2{
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 #msg{
   background-color: #337ab7;
   color: white;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 5px;
+  
 }
 
 /*---------------------- sub - links -----------------*/
@@ -150,7 +138,7 @@ h5.footHead{
   list-style-type: none;  
   padding: 0 auto;
   height: auto;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -210,6 +198,7 @@ ul.displayItem > li > div> img{
   color: #337ab7;
   float: left;
   padding-right: 5px; 
+  line-height: 0.8em;
 }
 
 /*---------------------------  form ---------------------------*/
