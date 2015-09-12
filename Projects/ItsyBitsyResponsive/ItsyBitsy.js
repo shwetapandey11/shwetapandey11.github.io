@@ -134,16 +134,17 @@ function isItemInCart (itemId){
 
 function addItemToCookie(itemId){
 	console.log (itemId + " adding to cookie");
-	if (!isItemInCart){
+	if (!isItemInCart(itemId)){
 		var cookies = getCookie("cart");
 		cookies += ":"  + itemId;
 		setCookie("cart", cookies);
 		console.log ("setting cookie:" + cookies);
 	}
+	console.log ("exit add item to cookie");
 }
 
 function removeItemFromCookie(itemId){
-	if (isItemInCart){
+	if (isItemInCart(itemId)){
 		var cookies = getCookie("cart");
 		var searchString = ":" + itemId;
 		var newvalue = cookies.replace(searchString, "");
