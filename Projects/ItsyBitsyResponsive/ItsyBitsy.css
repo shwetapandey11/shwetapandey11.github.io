@@ -6,8 +6,6 @@
 /* ------------------ main nav ----------------*/
 .navbar{
   margin: 0 auto ;
-  max-height: 90px;
-  white-space: nowrap;
 }
 .navbar-header > .navbar-brand{
   font-weight: bold;
@@ -18,18 +16,13 @@
   color: #B26B8F;  
   font-size: 1.8em;
 }
-/*.navbar .navbar-default .navbar-fixed-top{
-  margin-bottom: 10px;
-}*/
 
 /* ------------------ scrolling msg ----------------*/
 
 #msg, #msg2{
   color: gray;
-  border-radius: 4px;/*
-  margin: 5px auto;*/
-/*  background-color: #993399;
-*/text-align: center;
+  border-radius: 4px;
+  text-align: center;
 }
 
 #msg2{
@@ -178,28 +171,7 @@ ul.displayItem > li > div> img{
   width:150px;
   margin:10px auto;
 }
-.checkboxCookie{
-  height: 1.5em;
-  padding: 2px;
-  width: 15px;
-/*  margin: 0 auto; 
-*/  margin: 35% auto auto 40%;
-}
-.checkboxCookie input[type="checkbox"]{
-  display: inline-block;
-  position: absolute;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-.checkboxCookie > i {
-  display: inline-block;
-  font-size: 1.2em;
-  color: #337ab7;
-  float: left;
-  padding-right: 5px; 
-  line-height: 0.8em;
-}
+
 
 /*---------------------------  form ---------------------------*/
 
