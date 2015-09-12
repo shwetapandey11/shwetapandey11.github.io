@@ -38,13 +38,20 @@ $(document).ready(function(){
 
 				var incart = isItemInCart(eachItem.id);
 				var onclickFunc = null;
+				var btnLabel = "";
+				var btnClass = "btn-warning";
 				if (!incart){
 					onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
+					btnLabel = "Add to Cart";
+
 				} else {
 					onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
+					btnLabel = "Remove from Cart";
+					btnClass = "btn-danger";
 				}
 				 
-				html += "<div><button onclick='" + onclickFunc + "' class='btn btn-warning'><i class='fa fa-cart-plus'></i>Add to Cart</div>";
+				html += "<div><button onclick='" + onclickFunc + "' class='btn " + btnClass + "'> " + 
+							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</div>";
 
 				html += "</li>";
 
