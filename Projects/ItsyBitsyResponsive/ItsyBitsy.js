@@ -39,7 +39,7 @@ $(document).ready(function(){
 				var incart = isItemInCart(eachItem.id);
 				var onclickFunc = null;
 				var btnLabel = "";
-				var btnClass = "btn-warning";
+				var btnClass = "btn btn-warning btn-sm";
 				if (!incart){
 					onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
 					btnLabel = "Add to Cart";
@@ -47,10 +47,10 @@ $(document).ready(function(){
 				} else {
 					onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
 					btnLabel = "Remove from Cart";
-					btnClass = "btn-danger";
+					btnClass = "btn btn-danger btn-sm";
 				}
 				 
-				html += "<div><button onclick='" + onclickFunc + "' class='btn " + btnClass + "'> " + 
+				html += "<div><button onclick='" + onclickFunc + "' class='" + btnClass + "'> " + 
 							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</div>";
 
 				html += "</li>";
