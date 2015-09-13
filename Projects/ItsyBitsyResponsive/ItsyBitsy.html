@@ -17,7 +17,7 @@
 </head>
 <body data-target=".navbar" data-offset="50">
   <nav class="navbar navbar-default navbar-fixed-top affix-top">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -38,18 +38,16 @@
               </ul>
             </li>
             <li><a href="babycare.html">Baby Care</a></li>
-            <li><a href="babygear.html">Baby Gear</a></li>
-            <li><a href="babyfood.html">Baby Food</a></li>
+            <li><a href="babygear.html">Gear</a></li>
+            <li><a href="babyfood.html">Food</a></li>
             <li><a href="nursery.html">Nursery</a></li>
             <li><a href="toys.html">Toys</a></li>
             
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-              <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+              <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+              <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart </a></li>
           </ul>
         </div>
     </div>
@@ -57,7 +55,7 @@
    
    <div id="msg" class="container">
     <div class="row">
-      <h3>ItsyBitsy the #1 online store </h3>
+      <h3>Largest online store </h3>
       <p>Everything you need, is HERE</p>
     </div>
   </div>
@@ -70,27 +68,31 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
+<!--         <li data-target="#myCarousel" data-slide-to="3"></li>
+ -->      </ol>
 
       <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
       <div class="item">
         <img src="images/baby-girl-on-beach.jpg" alt="baby">
-      </div>
+<!--         <img class="visible-xs" src="images/baby-girl-on-beach2.jpg" alt="baby">
+ -->      </div>
 
-      <div class="item">
+      <!-- <div class="item">
         <img src="images/spring_kid.jpg" alt="spring-kid">
-      </div>
+        <img class="visible-xs" src="images/spring_kid2.jpg" alt="spring-kid">
+      </div> -->
 
       <div class="item active">
         <img src="images/snow_kid.jpg" alt="snow_kid">
-      </div>
+<!--         <img class="visible-xs" src="images/snow_kid2.jpg" alt="snow_kid">
+ -->      </div>
 
       <div class="item">
         <img src="images/bike_kid.jpg" alt="bike_kid">
-      </div>  
+<!--         <img class="visible-xs" src="images/bike_kid2.jpg" alt="bike_kid">
+ -->      </div>  
   </div>
 
   <!-- Left and right controls -->
@@ -112,7 +114,7 @@
             <div class="modal-content">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Please Sign-in below:</h4>            
+                  <h4 class="modal-title">Please Sign Up / Sign In below:</h4>            
               </div>
               <div class="modal-body">
                   <form role="form">
@@ -131,7 +133,8 @@
                   <label><input type="checkbox"> Remember me</label>
                 </div>
 
-                <button type="submit" class="btn btn-info">Submit</button>
+                <a href="signup.html" class="btn btn-primary" >Sign Up</a>
+                <button type="submit" class="btn btn-info">Sign In</button>
               </form>
               </div>
 
@@ -143,55 +146,57 @@
           </div>
         </div>
 
-     <div id="msg2" class="container">
-      <div class="row bg-info text-primary">
-        <h4>Coupons and Promotions <i class="fa fa-star fa-spin"></i><i class="fa fa-star fa-spin"></i><i class="fa fa-star fa-spin"></i></h4>
+   
+  
+  <div class ="container" id="lowerBody">
+  <div class="row">
+      <div id="dress" class="col-md-12 text-center itemRow bg-primary">
+        <h3><a href="dress.html" class="text-white">Dresses <i class="fa fa-smile-o"></i></a></h3>
+
+      </div>
+
+      <div id="shirts" class="col-md-12 text-center itemRow bg-info">
+        <h3><a href="shirts.html" class="text-default">Shirts <i class="fa fa-smile-o"></i></a></h3>
+      </div>
+
+       <div id="jeans" class="col-md-12 itemRow text-center bg-success">
+        <h3><a href="jeans.html" class="text-success">Denim <i class="fa fa-bicycle"></i></a></h3>
+      </div>
+
+      <div id="babycare" class="col-md-12 itemRow text-center bg-danger">
+        <h3><a href="babycare.html" class="text-default">Baby Care <i class="fa fa-umbrella"></i></a></h3>
+      </div>
+
+      <div id="babygear" class="col-md-12 itemRow text-center bg-success">
+        <h3><a href="babygear.html" class="text-default">Baby Gear <i class="fa fa-cogs"></i></a></h3>
+      </div>
+
+      <div id="babyfood" class="col-md-12 itemRow text-center bg-danger">
+        <h3><a href="babyfood.html" class="text-default">Baby Food <i class="fa fa-heart"></i></a></h3>
+      </div>
+
+       <div id="nursery" class="col-md-12 itemRow text-center bg-primary">
+        <h3><a href="nursery.html" class="text-white">Nursery <i class="fa fa-moon-o"></i></a></h3>
+        </div>
+
+       <div id="toys" class="col-md-12 itemRow text-center bg-info">
+        <h3><a href="toys.html" class="text-default">Toys <i class="fa fa-futbol-o"></i></a>
+        </h3>
+      </div>
+      <!-- <div id="order" class="col-md-12 itemRow text-center bg-warning">
+        <h3><a href="order.html" class="text-success">Order Now <i class="fa fa-shopping-cart"></i></a></h3>
+
+      </div> -->
+  </div>
+  </div>
+
+    <div id="msg2" class="container">
+      <div class="row text-primary">
+        <h4>Coupons & Promotions <i class="fa fa-star-o fa-spin"></i><i class="fa fa-star-o fa-spin"></i><i class="fa fa-star-o fa-spin"></i></h4>
         <p>Scrolling MSG</p>
       </div>
     </div>
-  
- <!--  <div class ="container" id="lowerBody">
-  <div class="row">
-      <div id="dress" class="col-md-3 itemRow one">
-        <h1><a href="dress.html">Girl's Dresses<i class="fa fa-smile-o"></i></a></h1>
 
-      </div>
-
-      <div id="shirts" class="col-md-3 itemRow two">
-        <h1><a href="shirts.html">Boy's Shirts<i class="fa fa-smile-o"></i></a></h1>
-      </div>
-
-       <div id="jeans" class="col-md-3 itemRow one">
-        <h1><a href="jeans.html">Kids Jeans<i class="fa fa-bicycle"></i></a></h1>
-      </div>
-
-      <div id="babycare" class="col-md-3 itemRow two">
-        <h1><a href="babycare.html">Baby Care<i class="fa fa-umbrella"></i></a></h1>
-      </div>
-
-      <div id="babygear" class="col-md-3 itemRow one">
-        <h1><a href="babygear.html">Baby Gear<i class="fa fa-cogs"></i></a></h1>
-      </div>
-
-      <div id="babyfood" class="col-md-3 itemRow two">
-        <h1><a href="babyfood.html">Baby Food<i class="fa fa-heart"></i></a></h1>
-      </div>
-
-       <div id="nursery" class="col-md-3 itemRow one">
-        <h1><a href="nursery.html">Nursery<i class="fa fa-moon-o"></i></a></h1>
-        </div>
-
-       <div id="toys" class="col-md-3 itemRow two">
-        <h1><a href="toys.html">Toys<i class="fa fa-futbol-o fa-spin"></i></a>
-        </h1>
-      </div>
-      <div id="order" class="col-md-3 itemRow one">
-        <h1><a href="order.html">Cart ReadyOrder Now<i class="fa fa-shopping-cart"></i></a>
-
-      </div>
-  </div>
-  </div>
- -->
    <div id="footer" class="container">
     <div class="row">    
       <div id="footer1" class="col-md-2 col-md-offset-1">

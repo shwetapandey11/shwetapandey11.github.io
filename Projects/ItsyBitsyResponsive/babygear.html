@@ -18,7 +18,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -39,18 +39,16 @@
               </ul>
             </li>
             <li><a href="babycare.html">Baby Care</a></li>
-            <li class="active"><a href="babygear.html">Baby Gear</a></li>
-            <li><a href="babyfood.html">Baby Food</a></li>
+            <li class="active"><a href="babygear.html">Gear</a></li>
+            <li><a href="babyfood.html">Food</a></li>
             <li><a href="nursery.html">Nursery</a></li>
             <li><a href="toys.html">Toys</a></li>
             
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-              <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+              <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+              <li><a href="order.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart </a></li>
           </ul>
         </div>
     </div>
@@ -61,7 +59,7 @@
             <div class="modal-content">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Please Sign-in below:</h4>            
+                  <h4 class="modal-title">Please Sign Up / Sign In below:</h4>            
               </div>
               <div class="modal-body">
                   <form role="form">
@@ -80,6 +78,7 @@
                   <label><input type="checkbox"> Remember me</label>
                 </div>
 
+                <a href="signup.html" class="btn btn-primary" >Sign Up</a>
                 <button type="submit" class="btn btn-info">Submit</button>
               </form>
               </div>

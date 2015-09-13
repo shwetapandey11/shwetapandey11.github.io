@@ -17,13 +17,8 @@
 #welcomeText{
 	font-family: 'limilations', Optima, 'Helvetica Neue', sans-serif;
 	padding-top: 6%;
-	-webkit-color:#b01;
-	color: #fff;
 	height: auto;
-	
-}
-#welcomeTextText{	
-
+	color: #b02;	
 }
 #body{
 	background: url("images/bg.gif");
@@ -34,11 +29,6 @@
 }
 .large{
 	font-size: 3em;
-}
-.homeRow{
-	padding: 0;
-	height: auto;
-	border-top: 1px solid transparent;
 }
 .banner{
 	background-color: #bb0011;
@@ -72,52 +62,55 @@
 	padding: 1%;
 }
 #containmentParent{
-	border-top: 5px solid #fff;
-	border-bottom: 0.5px solid #fff;
+	border-top: 0.5px solid #fff;
+	border-bottom: 5px solid #fff;
 }
-#containmentParent > .row{
-	min-height: 380px;
-	background: linear-gradient(#F0F0FF,#FF6699);
+#containmentParent > .row > #welcomeText{
+	/*background: linear-gradient(#F0F0FF,#FF6699);
  	-moz-background: linear-gradient(to right,#F0F0FF,#b01);
  	-o-background: linear-gradient(to right,#F0F0FF,#b01);
  	-ms-background: linear-gradient(to right,#F0F0FF,#b01);
- 	background: linear-gradient(to right,#F0F0FF,#b01);
+ 	background: linear-gradient(to right,#F0F0FF,#b01);*/
 	/*------  Safari fix  ------*/
- 	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#bb0011), color-stop(100%,#f0f0ff));  Chrome,Safari4+ 
-	background: -webkit-linear-gradient(top, #bb0011 0%,#f0f0ff 100%); /* Chrome10+,Safari5.1+ */
+ 	/*background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#bb0011), color-stop(100%,#f0f0ff));  Chrome,Safari4+ 
+	background: -webkit-linear-gradient(top, #bb0011 0%,#f0f0ff 100%);*/ /* Chrome10+,Safari5.1+ */
 }
+
 /*  ---------Slider-------- */
 
-#lowerBodySlider{
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-	width: 877px%;
- 	height: 455px;
-}
-#lowerBodySlider .slides{
-	width: 5262px;
-	height: 445px;
-	list-style-type: none;
-	padding: 0px;
-	overflow: hidden;
-}
-.slide{
-	float: left;
-	height: auto;
-	padding: 0px;
-	width:16.67%;
-	overflow: hidden;
-}
-.image > img{
-	width: 877px;
-	height: 455px;
-	float: left;
-	padding: 0px;
-}
- .visible-xs{
- 	padding: 0;
- }
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin-top: 10px;
+  background-color: white;
+
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 /* ---------- sub-pages ------------ */
 
 h5,h4{

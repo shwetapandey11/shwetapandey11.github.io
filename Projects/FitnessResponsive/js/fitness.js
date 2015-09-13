@@ -11,7 +11,7 @@ $(function(){
 
 	/* adding popover to explanation attr images brofe adding drag to them */
 
-	$("[alt='explanation']").draggable({ containment: "#containmentParent", scroll: false });
+	$("[alt='explanation']").draggable({ containment: "#tabs-1", scroll: false });
 
 	$( "#dialog" ).dialog();
 
@@ -44,35 +44,10 @@ $(function(){
     });
 
 /*-------------------------------   Slider Home Page ------------------------------------ */
-$(function(){
-	
-	var $slider = $("#lowerBodySlider");
-	var $slides = $slider.find(".slides");
-	var $slide = $slider.find(".slide");
-	var tracker=1;
-	var width = "877";
-	var timer;
-	function start(){  
-		timer = setInterval(function(){
-			$slides.animate({"margin-left" : "-=" + width},1000,function() {
-				tracker++;
-				if(tracker === $slide.length )
-				{
-					tracker = 1;
-					$slides.css("margin-left", 0);
-				}
-			});
-	},
-	3000);
-	};
-	function stop(){
-		clearInterval(timer);
-	}
-	$slides.on('mouseenter', stop);
-	$slides.on('mouseleave', start);
 
-	start();
-});
+$(function() {
+    $(".rslides").responsiveSlides();
+  });
 
 /*--------------------------------  Form Validation ----------------------------------*/
 $(document).ready(function(){ 

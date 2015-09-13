@@ -56,6 +56,7 @@ function addItemToCookie(itemId){
 		console.log ("setting cookie:" + cookies);
 	}
 	console.log ("exit add item to cookie");
+	return cookies(  );
 }
 
 function removeItemFromCookie(itemId){
@@ -110,8 +111,12 @@ $(document).ready(function(){
 				if (!incart){
 					onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
 					btnLabel = "Add to Cart";
+		
+					$("#carDisplay").html("<tr><td>" + eachItem.Name + "</td>" + " : " + "<td>"+ eachItem.price +"</td></tr>");
 
-				} else {
+
+				} else {	
+
 					onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
 					btnLabel = "Remove from Cart";
 					btnClass = "btn btn-danger btn-sm";
@@ -121,29 +126,17 @@ $(document).ready(function(){
 							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</div>";
 
 				html += "</li>";
-
-
-				/*var info = "<i class='fa fa-info-circle'></i>";
-
-				if( $("#checkboxCart").is(':checked')){
-					$(info).show();
-				}else{
-					$(info).hide();
-				}*/
-
 				
 			});  
 			element.append(html);
 
 
 			$("li img").mouseover(function(){
-				//alert ($(this).html());	
 				$(this).css({"height": "150px", "width":"150px", "cursor": "pointer"});
 
 				
 			});
 			$("li img").mouseout(function(){	
-				//$(this).toggleClass("zoomImg", 1000, "easeOutBounce");
 				$(this).css({"height": "138px", "width":"138px"});
 			});	
 	})};
@@ -163,7 +156,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-	var promotions = "Only " + 60 + " shopping days left until Thanksgiving ! HURRY !!! Before offer lasts. Maximum  $1000 saving inside !!! ";
+	var promotions = "Only " + 60 + " shopping days left until Thanksgiving ! HURRY !!! Over  $1000 saving inside !!! ";
 	function scroller(){ 
 		promotions = promotions.substring(1, promotions.length) + promotions.substring(0,1); 
 		$("#msg2 > .row > p").text(promotions); 
@@ -174,6 +167,14 @@ $(document).ready(function(){
 });
 
 
+/*----------------------------------  Widget ---------------------------------------*/
+
+$(function(){
+	function cartView(){
+
+
+	}
+});
 
 
 
