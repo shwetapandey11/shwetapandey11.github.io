@@ -41,7 +41,7 @@ p.textBelow{
 	font-size: 20px;	
 }
 p.textBelow:hover{
-	cursor: hand;
+	cursor: pointer;
 }
 .infostyle{
 	background-color: white;
@@ -54,7 +54,8 @@ p.textBelow:hover{
 	border: 5px solid #f0c310;
 	border: 5px solid #F8E188;
 	display: none;
-	margin-top: 0.5%;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 #projetDivLeft,#projetDivRight{
 	margin-top: 2%;
@@ -76,8 +77,8 @@ p.textBelow:hover{
 }.heading{
 	font-family: 'Charlemagne Std', Optima, Helvetica, sans-serif;
 }
-#one:hover{
-	cursor: hand;
+#one:hover, #two:hover, #three:hover{
+	cursor: pointer;
 }
 .fa-mobile{
 	font-size: 1.5em;

@@ -1,3 +1,5 @@
+'use strict'
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
@@ -6,27 +8,37 @@ $(document).ready(function(){
 
     /*-----------  About Effects     -------------*/
 
-    $("#one").click(function(){
-        $("#about").toggle("clip",1500);
-        $("#one,#two,#three").hide();
+    $("#one img").click(function(){
+        var v = $("#about").is(":visible");
+        if (v){
+            $("#about").hide(1000, function (){
+                $("#two,#three").show(1500);
+            });
+        } else {
+           $("#two,#three").hide(1000, function (){
+                $("#about").show(1500);
+            }); 
+        }
     });
-    $("#about").click(function(){
-        $("#one,#two,#three,#about").toggle();
-    });
+    
 
     /*-----------  Projects Effects     -------------*/
 
-    $("#two").click(function(){
+    $("#two img").click(function(){
 
-        $("#projetDivRight,#projetDivLeft").toggle( "bounce",1500);
-
-        $("#one,#two,#three").hide();
+        
+        $("#one,#two,#three").hide(1000, function (){
+         
+            $("#projetDivRight,#projetDivLeft").show(1000);
+        });
 
     });
 
     $("#projetDivRight,#projetDivLeft").click(function(){
-
-        $("#one,#two,#three,#projetDivRight,#projetDivLeft").toggle();
+        
+        $("#projetDivRight,#projetDivLeft").hide(1000, function (){
+            $("#one,#two,#three").show (1000);
+        });
 
     });
 
@@ -39,3 +51,5 @@ $(document).ready(function(){
     });
 
 });
+
+

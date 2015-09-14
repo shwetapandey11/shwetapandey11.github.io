@@ -56,7 +56,7 @@ function addItemToCookie(itemId){
 		console.log ("setting cookie:" + cookies);
 	}
 	console.log ("exit add item to cookie");
-	return cookies(  );
+	return cookies;
 }
 
 function removeItemFromCookie(itemId){
@@ -100,30 +100,29 @@ $(document).ready(function(){
 				if (eachItem.img){
 					html += "<div class='itemImage'><img src='" + eachItem.img + "' border=0></div>"; 
 				} else {
-					html += "<div class='itemImage'><img src='images/Frock1.jpg'/></div>";
+					html += "<div class='itemImage'> "+ eachItem.name + "'s Image Unavaiable </div>";
 				}
 				html += "<div class='itemPrice'>" + eachItem.price + "</div>";
 
-				var incart = isItemInCart(eachItem.id);
-				var onclickFunc = null;
-				var btnLabel = "";
-				var btnClass = "btn btn-warning btn-sm";
-				if (!incart){
-					onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
-					btnLabel = "Add to Cart";
-		
-					$("#carDisplay").html("<tr><td>" + eachItem.Name + "</td>" + " : " + "<td>"+ eachItem.price +"</td></tr>");
+					var incart = isItemInCart(eachItem.id);
+					var onclickFunc = null;
+					var btnLabel = "";
+					var btnClass = "btn btn-warning btn-sm";
+					if (!incart){
+						onclickFunc = 'addItemToCookie(\"' + eachItem.id + '\")'; 
+						//alert(onclickFunc);
+						btnLabel = "Add to Cart";
+				
+						$("#cartDisplay").html("<tr><td>" + eachItem.Name + "</td>" + " : " + "<td>"+ eachItem.price +"</td></tr>");
+					} else {	
 
-
-				} else {	
-
-					onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
-					btnLabel = "Remove from Cart";
-					btnClass = "btn btn-danger btn-sm";
-				}
+						onclickFunc = "removeItemFromCookie(\"" + eachItem.id + "\")";
+						btnLabel = "Remove from Cart";
+						btnClass = "btn btn-danger btn-sm";
+					}
 				 
 				html += "<div><button onclick='" + onclickFunc + "' class='" + btnClass + "'> " + 
-							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</div>";
+							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</button></div>";
 
 				html += "</li>";
 				
