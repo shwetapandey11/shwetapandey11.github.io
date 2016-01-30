@@ -1,73 +1,5 @@
 'use strict'
 
-/*----------------------------------  cookie ---------------------------------------*/
-
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname+"="+cvalue+"; "+expires;
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 30);
-       }
-    }
-}
-
-
-function isItemInCart (itemId){
-	var cookies = getCookie("cart");
-	if (cookies === ""){
-		return false;
-	} else {
-		if (cookies.indexOf(itemId) == -1){
-			return false;
-		}
-	}
-	return true;
-}
-
-function addItemToCookie(itemId){
-	console.log (itemId + " adding to cookie");
-	if (!isItemInCart(itemId)){
-		var cookies = getCookie("cart");
-		cookies += ":"  + itemId;
-		setCookie("cart", cookies);
-		console.log ("setting cookie:" + cookies);
-	}
-	console.log ("exit add item to cookie");
-	return cookies;
-}
-
-function removeItemFromCookie(itemId){
-	if (isItemInCart(itemId)){
-		var cookies = getCookie("cart");
-		var searchString = ":" + itemId;
-		var newvalue = cookies.replace(searchString, "");
-		setCookie("cart", newvalue);
-	}
-}
-
 /*-------------------------------------------- AJAX -----------------------------------------*/
 $(document).ready(function(){
 	
@@ -140,6 +72,74 @@ $(document).ready(function(){
 			});	
 	})};
 });
+
+/*----------------------------------  cookie ---------------------------------------*/
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+}
+
+
+function isItemInCart (itemId){
+	var cookies = getCookie("cart");
+	if (cookies === ""){
+		return false;
+	} else {
+		if (cookies.indexOf(itemId) == -1){
+			return false;
+		}
+	}
+	return true;
+}
+
+function addItemToCookie(itemId){
+	console.log (itemId + " adding to cookie");
+	if (!isItemInCart(itemId)){
+		var cookies = getCookie("cart");
+		cookies += ":"  + itemId;
+		setCookie("cart", cookies);
+		console.log ("setting cookie:" + cookies);
+	}
+	console.log ("exit add item to cookie");
+	return cookies;
+}
+
+function removeItemFromCookie(itemId){
+	if (isItemInCart(itemId)){
+		var cookies = getCookie("cart");
+		var searchString = ":" + itemId;
+		var newvalue = cookies.replace(searchString, "");
+		setCookie("cart", newvalue);
+	}
+}
 
 /*----------------------------------  Widget ---------------------------------------*/
 
