@@ -4,21 +4,24 @@
 $(document).ready(function(){
 	
 	$.ajax({
-		url:"inventory.json",
-		type:"GET",
-		dataType: "json",
+		url: 'inventory.json',
+		type: 'GET',
+		dataType: 'json',
 		success: successFunc,
-		error:errorFunc
+		error: errorFunc
 	});
 
 	function successFunc(data, textStatus, jqXHR){
 		display(data);
-	}
+	};
 
 	function errorFunc(jqXHR, textStatus, error){
 		alert(JSON.stringify(error));
-	}
-	function display(data){
+	};
+
+	
+
+function display(data){
 		$.each (data, function(i){
 			//alert(i);
 			var arrayItems = data[i];
@@ -53,7 +56,7 @@ $(document).ready(function(){
 						btnClass = "btn btn-danger btn-sm";
 					}
 				 
-				html += "<div><button onclick='" + onclickFunc + "' class='" + btnClass + "'> " + 
+				html += "<div><button id='btn" + eachItem.id + "' onclick='" + onclickFunc + "' class='" + btnClass + "'> " + 
 							"<i class='fa fa-cart-plus'></i>" + btnLabel + "</button></div>";
 
 				html += "</li>";
@@ -71,6 +74,7 @@ $(document).ready(function(){
 				$(this).css({"height": "138px", "width":"138px"});
 			});	
 	})};
+	
 });
 
 /*----------------------------------  cookie ---------------------------------------*/
@@ -166,30 +170,24 @@ $(document).ready(function(){
 });
 
 
-/*----------------------------------  Widget ---------------------------------------*/
+var Cart = (function(){
 
-$(function(){
-	function cartView(){
+	var itemsInCart = [];
 
-
+	return {
+		addItem : function (item){
+			//alert ("adding item");
+		},
+		removeItem : function (item){
+			//alert ("removing item");
+		},
+		getItems : function (){
+			//alert ("showing items");
+		}
 	}
-});
 
+})();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Cart.getItems();
+Cart.addItem();
+Cart.removeItem();
