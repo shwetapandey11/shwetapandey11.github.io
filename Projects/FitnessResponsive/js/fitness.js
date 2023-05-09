@@ -198,19 +198,31 @@ function calcBMI(){
 				
 		if(BMI>30)
 			{
-				alert("Your BMI is "+ BMI + ". It is in the unhealthy/Obese range.<br />");
+				alert("Your BMI is "+ BMI + ". It is in the unhealthy/Obese range.");
 
 				document.getElementById("result").innerHTML= ("Your BMI is "+ BMI + ". It is in the unhealthy/Obese range.<br /> Please Exercise and Eat Right!");
 			}	
-		else if(BMI<=30)
+		else if(BMI<=30 && BMI>25)
 			{
-				alert("Your BMI is "+ BMI +". It is in a healthy range.<br />");
+				alert("Your BMI is "+ BMI +". It is in an overweight range.");
 
-				document.getElementById("result").innerHTML=("Your BMI is "+ BMI + ". It is in a healthy range.<br /> Keep-Up your healthy lifestyle!<br /> You are doing it right!!");
+				document.getElementById("result").innerHTML=("Your BMI is "+ BMI + ". It is in a overweight range.<br /> Please take proper diet and follow an active lifestyle.!");
 			}
+		else if(BMI<=18)
+            {
+                alert("Your BMI is "+ BMI +". It is in an Underweight range.");
+
+                document.getElementById("result").innerHTML=("Your BMI is "+ BMI + ". It is in an Underweight range.<br /> Please take proper diet and follow an active lifestyle.!");
+            }
+		else if( 25>BMI>18)
+            {
+                alert("Your BMI is "+ BMI +". It is in a healthy range.");
+
+                document.getElementById("result").innerHTML=("Your BMI is "+ BMI + ". It is in a healthy range.<br /> Keep-Up your healthy lifestyle!<br /> You are doing it right!!");
+            }
 		else
 			{
-				alert("Oops, something went wrong. Your BMI couldn't be calculated.<br />");
+				alert("Oops, something went wrong. Your BMI couldn't be calculated.");
 
 				document.getElementById("result").innerHTML= ("Try again.<br />");
 			}
